@@ -4773,6 +4773,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (GPRW (0x1B, 0x03))
                 }
+                Method (_DSM, 4, NotSerialized)
+                {
+                    Store (Package (0x02) {
+                        "compatible", Buffer () {"pci8086,8c44"}
+                    }, Local0)
+                    DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                    Return (Local0)
+                }
             }
 
             Device (RP01)
