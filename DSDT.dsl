@@ -6912,8 +6912,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     Method (LXDH, 0, NotSerialized)
     {
         \_SB.PCI0.XHC.GPEH ()
-        \_SB.PCI0.EHC1.GPEH ()
-        \_SB.PCI0.EHC2.GPEH ()
+        \_SB.PCI0.EH01.GPEH ()
+        \_SB.PCI0.EH02.GPEH ()
         \_SB.PCI0.HDEF.GPEH ()
         \_SB.PCI0.GLAN.GPEH ()
     }
@@ -7874,7 +7874,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             }
         }
 
-        Device (EHC1)
+        Device (EH01)
         {
             Name (_ADR, 0x001D0000)  // _ADR: Address
             OperationRegion (PWKE, PCI_Config, Zero, 0x0100)
@@ -7903,7 +7903,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 If (LAnd (PMEE, PMES))
                 {
                     Store (One, PMES)
-                    Notify (EHC1, 0x02)
+                    Notify (EH01, 0x02)
                 }
                 Return (Zero)
             }
@@ -8208,7 +8208,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             }
         }
 
-        Device (EHC2)
+        Device (EH02)
         {
             Name (_ADR, 0x001A0000)  // _ADR: Address
             OperationRegion (PWKE, PCI_Config, Zero, 0x0100)
@@ -8237,7 +8237,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 If (LAnd (PMEE, PMES))
                 {
                     Store (One, PMES)
-                    Notify (EHC2, 0x02)
+                    Notify (EH02, 0x02)
                 }
                 Return (Zero)
             }
@@ -17293,7 +17293,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR11)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR11)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17321,7 +17321,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR12)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR12)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17349,7 +17349,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR13)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR13)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17383,7 +17383,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR14)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR14)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17411,7 +17411,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR15)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR15)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17439,7 +17439,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR16)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR16)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17467,7 +17467,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR17)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR17)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17495,7 +17495,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC1.HUBN.PR01.PR18)
+    Scope (_SB.PCI0.EH01.HUBN.PR01.PR18)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17523,7 +17523,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR11)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR11)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17551,7 +17551,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR12)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR12)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17579,7 +17579,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR13)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR13)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17607,7 +17607,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR14)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR14)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17635,7 +17635,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR15)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR15)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
@@ -17663,7 +17663,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         }
     }
 
-    Scope (_SB.PCI0.EHC2.HUBN.PR01.PR16)
+    Scope (_SB.PCI0.EH02.HUBN.PR01.PR16)
     {
         Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
         {
