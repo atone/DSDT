@@ -8187,6 +8187,25 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (GPRW (0x0D, 0x04))
             }
+            Method (_DSM, 4, NotSerialized)
+            {
+                Store (Package (0x17) {
+                    "AAPL,clock-id", Buffer (One) { 0x02 },
+                    "AAPL,slot-name", "Built In",
+                    "name", "Intel EHCI Controller",
+                    "model", Buffer(0x3E) {"Intel 9 Series Chipset Family USB Enhanced Host Controller #1"},
+                    "device_type", Buffer (0x0E) {"USB Controller"},
+                    "AAPL,current-available", 0x0834,
+                    "AAPL,current-extra", 0x0A8C,
+                    "AAPL,current-in-sleep", 0x03E8,
+                    "AAPL,current-extra-in-sleep", 0x0834,
+                    "AAPL,max-port-current-in-sleep", 0x0A8C,
+                    "AAPL,device-internal", 0x02,
+                    Buffer (One) {0x00}
+                }, Local0)
+                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                Return (Local0)
+            }
         }
 
         Device (EHC2)
@@ -8395,6 +8414,25 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
             {
                 Return (GPRW (0x0D, 0x04))
+            }
+            Method (_DSM, 4, NotSerialized)
+            {
+                Store (Package (0x17) {
+                    "AAPL,clock-id", Buffer (One) { 0x02 },
+                    "AAPL,slot-name", "Built In",
+                    "name", "Intel EHCI Controller",
+                    "model", Buffer (0x3E) {"Intel 9 Series Chipset Family USB Enhanced Host Controller #2"},
+                    "device_type", Buffer (0x0E) {"USB Controller"},
+                    "AAPL,current-available", 0x0834,
+                    "AAPL,current-extra", 0x0A8C,
+                    "AAPL,current-in-sleep", 0x03E8,
+                    "AAPL,current-extra-in-sleep", 0x0834,
+                    "AAPL,max-port-current-in-sleep", 0x0A8C,
+                    "AAPL,device-internal", 0x02,
+                    Buffer (One) {0x00}
+                }, Local0)
+                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                Return (Local0)
             }
         }
     }
@@ -9068,6 +9106,25 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         Return (Add (XSPA, One))
                     }
                 }
+            }
+            Method (_DSM, 4, NotSerialized)
+            {
+                Store (Package (0x17) {
+                    "AAPL,clock-id", Buffer (One) { 0x02 },
+                    "AAPL,slot-name", "Built In",
+                    "name", "Intel XHCI Controller",
+                    "model", Buffer (0x37) {"Intel 9 Series Chipset Family USB xHCI Host Controller"},
+                    "device_type", Buffer (0x0E) {"USB Controller"},
+                    "AAPL,current-available", 0x0834,
+                    "AAPL,current-extra", 0x0A8C,
+                    "AAPL,current-in-sleep", 0x03E8,
+                    "AAPL,current-extra-in-sleep", 0x0834,
+                    "AAPL,max-port-current-in-sleep", 0x0A8C,
+                    "AAPL,device-internal", 0x02,
+                    Buffer (One) {0x00}
+                }, Local0)
+                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                Return (Local0)
             }
         }
     }
