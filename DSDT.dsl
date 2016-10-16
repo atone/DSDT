@@ -44,38 +44,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
      * External declarations were imported from
      * a reference file -- refs.txt
      */
-    Method (DTGP, 5, NotSerialized)
-    {
-        If (LEqual (Arg0, Buffer (0x10)
-                {
-                    /* 0000 */    0xC6, 0xB7, 0xB5, 0xA0, 0x18, 0x13, 0x1C, 0x44, 
-                    /* 0008 */    0xB0, 0xC9, 0xFE, 0x69, 0x5E, 0xAF, 0x94, 0x9B
-                }))
-        {
-            If (LEqual (Arg1, One))
-            {
-                If (LEqual (Arg2, Zero))
-                {
-                    Store (Buffer (One)
-                        {
-                            0x03
-                        }, Arg4)
-                    Return (One)
-                }
-
-                If (LEqual (Arg2, One))
-                {
-                    Return (One)
-                }
-            }
-        }
-
-        Store (Buffer (One)
-            {
-                0x00
-            }, Arg4)
-        Return (Zero)
-    }
+    
 
 
     External (_GPE.MMTB, MethodObj)    // Imported: 0 Arguments
@@ -89,19 +58,19 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     External (_PR_.DTSF, FieldUnitObj)
     External (_PR_.TRPD, FieldUnitObj)
     External (_PR_.TRPF, FieldUnitObj)
-    External (_SB_.IAOE.ECTM, UnknownObj)    // Warning: Unknown object
-    External (_SB_.IAOE.IBT1, UnknownObj)    // Warning: Unknown object
-    External (_SB_.IAOE.ITMR, UnknownObj)    // Warning: Unknown object
-    External (_SB_.IAOE.RCTM, UnknownObj)    // Warning: Unknown object
-    External (_SB_.IAOE.WKRS, UnknownObj)    // Warning: Unknown object
-    External (_SB_.PCCD, UnknownObj)    // Warning: Unknown object
-    External (_SB_.PCCD.PENB, UnknownObj)    // Warning: Unknown object
+    External (_SB_.IAOE.ECTM)    // Warning: Unknown object
+    External (_SB_.IAOE.IBT1)    // Warning: Unknown object
+    External (_SB_.IAOE.ITMR)    // Warning: Unknown object
+    External (_SB_.IAOE.RCTM)    // Warning: Unknown object
+    External (_SB_.IAOE.WKRS)    // Warning: Unknown object
+    External (_SB_.PCCD)    // Warning: Unknown object
+    External (_SB_.PCCD.PENB)    // Warning: Unknown object
     External (_SB_.PCI0.B0D3.ABAR, FieldUnitObj)
     External (_SB_.PCI0.B0D3.BARA, IntObj)
     External (_SB_.PCI0.EPON, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.GFX0.CLID, FieldUnitObj)
     External (_SB_.PCI0.GFX0.DD02._BCM, MethodObj)    // Imported: 1 Arguments
-    External (_SB_.PCI0.GFX0.DD1F, UnknownObj)
+    External (_SB_.PCI0.GFX0.DD1F)
     External (_SB_.PCI0.GFX0.GLID, MethodObj)    // 1 Arguments
     External (_SB_.PCI0.GFX0.GSCI, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.GFX0.GSSE, FieldUnitObj)
@@ -122,11 +91,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     External (_SB_.PCI0.SAT1.SDSM, MethodObj)    // Imported: 4 Arguments
     External (_SB_.PCI0.XHC_.DUAM, MethodObj)    // Warning: Unknown method, guessing 0 arguments
     External (_SB_.TPM_.PTS_, MethodObj)    // Warning: Unknown method, guessing 1 arguments
-    External (_TZ_.TZ00, UnknownObj)
-    External (_TZ_.TZ01, UnknownObj)
-    External (D1F0, UnknownObj)    // Warning: Unknown object
-    External (D1F1, UnknownObj)    // Warning: Unknown object
-    External (D1F2, UnknownObj)    // Warning: Unknown object
+    External (_TZ_.TZ00)
+    External (_TZ_.TZ01)
+    External (D1F0)    // Warning: Unknown object
+    External (D1F1)    // Warning: Unknown object
+    External (D1F2)    // Warning: Unknown object
     External (DIDX, FieldUnitObj)
     External (GSMI, FieldUnitObj)
     External (IGDS, FieldUnitObj)
@@ -10363,9 +10332,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (IRB0, \_SB.PCI0.I2C0.ACD0._CRS._Y3C._INT, VAL1)  // _INT: Interrupts
+                    CreateDWordField (IRB0, \_SB.PCI0.I2C0.ACD0._CRS._Y3C._INT, VAL1)  // _INT: Interrupts
                     Store (0x1E, VAL1)
-                    CreateByteField (IRB1, \_SB.PCI0.I2C0.ACD0._CRS._Y3D._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (IRB1, \_SB.PCI0.I2C0.ACD0._CRS._Y3D._INT, VAL3)  // _INT: Interrupts
                     Store (0x1E, VAL3)
                 }
 
@@ -10455,7 +10424,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (RBUF, \_SB.PCI0.I2C0.ACD1._CRS._Y3E._INT, VAL1)  // _INT: Interrupts
+                    CreateDWordField (RBUF, \_SB.PCI0.I2C0.ACD1._CRS._Y3E._INT, VAL1)  // _INT: Interrupts
                     Store (0x1E, VAL1)
                     CreateByteField (RBUF, 0x41, VAL2)
                     Store (0x55, VAL2)
@@ -10561,7 +10530,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     CreateByteField (RBUF, 0x60, VAL1)
                     Store (0x2E, VAL1)
-                    CreateByteField (RBUF, \_SB.PCI0.I2C0.ACD2._CRS._Y3F._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (RBUF, \_SB.PCI0.I2C0.ACD2._CRS._Y3F._INT, VAL3)  // _INT: Interrupts
                     Store (0x1E, VAL3)
                 }
 
@@ -10862,6 +10831,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
@@ -10945,6 +10915,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11048,6 +11019,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11123,6 +11095,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11152,7 +11125,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPL0._CRS._Y40._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPL0._CRS._Y40._INT, VAL4)  // _INT: Interrupts
                     Store (0x1F, VAL4)
                 }
 
@@ -11235,6 +11208,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11262,7 +11236,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         0x00000022,
                     }
                 })
-                CreateByteField (SBFI, \_SB.PCI0.I2C1.TPL1._CRS._Y41._INT, VAL4)  // _INT: Interrupts
+                CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPL1._CRS._Y41._INT, VAL4)  // _INT: Interrupts
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
                     Store (0x1F, VAL4)
@@ -11318,6 +11292,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11357,7 +11332,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (IRBU, \_SB.PCI0.I2C1.TPL2._CRS._Y42._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (IRBU, \_SB.PCI0.I2C1.TPL2._CRS._Y42._INT, VAL4)  // _INT: Interrupts
                     Store (0x1F, VAL4)
                 }
 
@@ -11417,6 +11392,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11444,7 +11420,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         0x00000022,
                     }
                 })
-                CreateByteField (SBFI, \_SB.PCI0.I2C1.TPL3._CRS._Y44._INT, VAL4)  // _INT: Interrupts
+                CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPL3._CRS._Y44._INT, VAL4)  // _INT: Interrupts
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
                     Store (0x1F, VAL4)
@@ -11500,6 +11476,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11529,13 +11506,13 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD0._CRS._Y45._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD0._CRS._Y45._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                 }
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD0._CRS._Y45._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD0._CRS._Y45._INT, VAL4)  // _INT: Interrupts
                     Store (0x1A, VAL4)
                 }
 
@@ -11584,6 +11561,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11613,13 +11591,13 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD1._CRS._Y46._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD1._CRS._Y46._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                 }
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD1._CRS._Y46._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD1._CRS._Y46._INT, VAL4)  // _INT: Interrupts
                     Store (0x1A, VAL4)
                 }
 
@@ -11668,6 +11646,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11697,13 +11676,13 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD2._CRS._Y47._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD2._CRS._Y47._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                 }
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD2._CRS._Y47._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD2._CRS._Y47._INT, VAL4)  // _INT: Interrupts
                     Store (0x1A, VAL4)
                 }
 
@@ -11752,6 +11731,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11781,13 +11761,13 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD3._CRS._Y48._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD3._CRS._Y48._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                 }
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD3._CRS._Y48._INT, VAL4)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD3._CRS._Y48._INT, VAL4)  // _INT: Interrupts
                     Store (0x1A, VAL4)
                 }
 
@@ -11848,6 +11828,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -11877,7 +11858,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD7._CRS._Y49._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD7._CRS._Y49._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                     If (LEqual (S0ID, Zero))
                     {
@@ -11888,7 +11869,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD7._CRS._Y49._INT, VAL7)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD7._CRS._Y49._INT, VAL7)  // _INT: Interrupts
                     Store (0x1A, VAL7)
                 }
 
@@ -11992,6 +11973,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                          0x00                                           
                     })
                 }
+                Return (Zero)
             }
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -12021,7 +12003,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 })
                 If (LEqual (GR13, One))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD8._CRS._Y4A._INT, VAL3)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD8._CRS._Y4A._INT, VAL3)  // _INT: Interrupts
                     Store (0x1B, VAL3)
                     If (LEqual (S0ID, Zero))
                     {
@@ -12032,7 +12014,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 If (LOr (LOr (LEqual (BID, 0x80), LEqual (BID, 0x82)), LEqual (BID, 0x83)))
                 {
-                    CreateByteField (SBFI, \_SB.PCI0.I2C1.TPD8._CRS._Y4A._INT, VAL7)  // _INT: Interrupts
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C1.TPD8._CRS._Y4A._INT, VAL7)  // _INT: Interrupts
                     Store (0x1A, VAL7)
                 }
 
@@ -14584,7 +14566,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Store (0x07D9, OSTY)
             If (CondRefOf (\_OSI, Local0))
             {
-                If (_OSI ("Windows 2001"))
+				If (_OSI ("Darwin"))
+				{
+					Store (0x2710, OSYS)
+				}
+
+				If (_OSI ("Windows 2001"))
                 {
                     Store (0x07D1, OSTY)
                 }
@@ -17888,6 +17875,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (0x0201D824)
             }
+            Return (Zero)
         }
 
         Name (_CID, EisaId ("PNP0C31"))  // _CID: Compatible ID
@@ -18365,6 +18353,30 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
     Method (PINI, 0, NotSerialized)
     {
+    }
+    Method (DTGP, 5, NotSerialized)
+    {
+        If (LEqual (Arg0, Buffer (0x10)
+        {
+            /* 0000 */    0xC6, 0xB7, 0xB5, 0xA0, 0x18, 0x13, 0x1C, 0x44,
+            /* 0008 */    0xB0, 0xC9, 0xFE, 0x69, 0x5E, 0xAF, 0x94, 0x9B
+        }))
+        {
+            If (LEqual (Arg1, One))
+            {
+                If (LEqual (Arg2, Zero))
+                {
+                    Store (Buffer (One) { 0x03 }, Arg4)
+                    Return (One)
+                }
+                If (LEqual (Arg2, One))
+                {
+                    Return (One)
+                }
+            }
+        }
+        Store (Buffer (One) { 0x00 }, Arg4)
+        Return (Zero)
     }
 }
 
