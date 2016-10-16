@@ -6766,6 +6766,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     Return (PR0F ())
                 }
             }
+            Device (MCHC)
+            {
+                Name (_ADR, Zero)
+            }
         }
 
         Scope (\_GPE)
