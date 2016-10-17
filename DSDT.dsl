@@ -14620,7 +14620,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     Store (0x07D9, OSTY)
                 }
 
-                If (LOr(_OSI("Darwin"), _OSI("Windows 2012")))
+                If (LOr (_OSI ("Darwin"), _OSI ("Windows 2012")))
                 {
                     Store (0x07DC, OSYS)
                     Store (0x07DC, OSTY)
