@@ -8986,10 +8986,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
             Method (XWAK, 0, Serialized)
             {
-                If (LOr (LEqual (^^LPCB.XUSB, One), LEqual (XRST, One)))
-                {
-                    XSEL ()
-                }
+                Return (Zero)
             }
 
             Device (RHUB)
