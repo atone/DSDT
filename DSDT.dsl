@@ -14567,12 +14567,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Store (0x07D9, OSTY)
             If (CondRefOf (\_OSI, Local0))
             {
-				If (_OSI ("Darwin"))
-				{
-					Store (0x2710, OSYS)
-				}
-
-				If (_OSI ("Windows 2001"))
+                If (_OSI ("Windows 2001"))
                 {
                     Store (0x07D1, OSTY)
                 }
@@ -14628,7 +14623,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     Store (0x07D9, OSTY)
                 }
 
-                If (_OSI ("Windows 2012"))
+                If (LOr(_OSI("Darwin"), _OSI("Windows 2012")))
                 {
                     Store (0x07DC, OSYS)
                     Store (0x07DC, OSTY)
