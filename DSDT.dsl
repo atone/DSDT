@@ -3693,6 +3693,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Store (IOST, Local0)
                         }
+                        Return (Zero)
                     }
 
                     Method (DCNT, 2, NotSerialized)
