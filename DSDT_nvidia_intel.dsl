@@ -6740,7 +6740,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (_ADR, Zero)
             }
-            Device (MEI)
+            Device (IMEI)
             {
                 Name (_ADR, 0x00160000)
                 Method (_DSM, 4, NotSerialized)
@@ -16314,71 +16314,6 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       
             })
             Return (PIB2)
-        }
-    }
-
-    Scope (_SB.PCI0)
-    {
-        Device (HECI)
-        {
-            Name (_ADR, 0x00160000)  // _ADR: Address
-            Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
-            {
-                Name (T_0, Zero)  // _T_x: Emitted by ASL Compiler
-                If (LEqual (Arg0, ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37")))
-                {
-                    If (LEqual (Arg2, Zero))
-                    {
-                        If (LEqual (Arg1, Zero))
-                        {
-                            Return (Buffer (One)
-                            {
-                                 0x03                                           
-                            })
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-
-                    If (LEqual (Arg2, One))
-                    {
-                        While (One)
-                        {
-                            Store (DerefOf (Index (Arg3, Zero)), T_0)
-                            If (LEqual (T_0, Zero))
-                            {
-                                P8XH (Zero, 0x5C)
-                            }
-                            ElseIf (LEqual (T_0, One))
-                            {
-                                If (CondRefOf (\_SB.SLPB))
-                                {
-                                    Notify (SLPB, 0x80)
-                                    P8XH (Zero, 0x5D)
-                                }
-                            }
-                            ElseIf (LEqual (T_0, 0x02)) {}
-                            ElseIf (LEqual (T_0, 0x03)) {}
-                            Break
-                        }
-
-                        Return (Zero)
-                    }
-                    Else
-                    {
-                        Return (Zero)
-                    }
-                }
-                Else
-                {
-                    Return (Buffer (One)
-                    {
-                         0x00                                           
-                    })
-                }
-            }
         }
     }
 
