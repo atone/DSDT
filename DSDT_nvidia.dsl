@@ -2,7 +2,7 @@
  * Intel ACPI Component Architecture
  * AML/ASL+ Disassembler version 20160422-64(RM)
  * Copyright (c) 2000 - 2016 Intel Corporation
- *
+ * 
  * Disassembling to non-symbolic legacy ASL operators
  *
  * Disassembly of DSDT.aml, Fri Oct 14 16:10:39 2016
@@ -44,7 +44,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
      * External declarations were imported from
      * a reference file -- refs.txt
      */
-
+    
 
 
     External (_GPE.MMTB, MethodObj)    // Imported: 0 Arguments
@@ -232,399 +232,399 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     OperationRegion (GNVS, SystemMemory, 0xDCE1EA98, 0x0350)
     Field (GNVS, AnyAcc, Lock, Preserve)
     {
-        OSYS,   16,
-        SMIF,   8,
-        PRM0,   8,
-        PRM1,   8,
-        SCIF,   8,
-        PRM2,   8,
-        PRM3,   8,
-        LCKF,   8,
-        PRM4,   8,
-        PRM5,   8,
-        P80D,   32,
-        PWRS,   8,
-        DBGS,   8,
-        THOF,   8,
-        ACT1,   8,
-        ACTT,   8,
-        PSVT,   8,
-        TC1V,   8,
-        TC2V,   8,
-        TSPV,   8,
-        CRTT,   8,
-        DTSE,   8,
-        DTS1,   8,
-        DTS2,   8,
-        DTSF,   8,
-        Offset (0x1E),
-        Offset (0x25),
-        REVN,   8,
-        Offset (0x28),
-        APIC,   8,
-        TCNT,   8,
-        PCP0,   8,
-        PCP1,   8,
-        PPCM,   8,
-        PPMF,   32,
-        C67L,   8,
-        NATP,   8,
-        CMAP,   8,
-        CMBP,   8,
-        LPTP,   8,
-        FDCP,   8,
-        CMCP,   8,
-        CIRP,   8,
-        SMSC,   8,
-        W381,   8,
-        SMC1,   8,
-        EMAE,   8,
-        EMAP,   16,
-        EMAL,   16,
-        Offset (0x42),
-        MEFE,   8,
-        DSTS,   8,
-        TL2F,   32,
-        MORD,   8,
-        TCGP,   8,
-        PPRP,   32,
-        PPRQ,   8,
-        LPPR,   8,
-        GTF0,   56,
-        GTF2,   56,
-        IDEM,   8,
-        GTF1,   56,
-        BID,    16,
-        PLID,   8,
-        ECTG,   8,
-        SDPO,   8,
-        SKID,   8,
-        Offset (0x70),
-        OSCC,   8,
-        NEXP,   8,
-        SBV1,   8,
-        SBV2,   8,
-        Offset (0x7A),
-        DSEN,   8,
-        ECON,   8,
-        GPIC,   8,
-        CTYP,   8,
-        L01C,   8,
-        VFN0,   8,
-        VFN1,   8,
-        VFN2,   8,
-        VFN3,   8,
-        VFN4,   8,
-        VFN5,   8,
-        VFN6,   8,
-        VFN7,   8,
-        VFN8,   8,
-        VFN9,   8,
-        Offset (0x8F),
-        ATMC,   8,
-        PTMC,   8,
-        ATRA,   8,
-        PTRA,   8,
-        PNHM,   32,
-        Offset (0x9F),
-        RTIP,   8,
-        TSOD,   8,
-        ATPC,   8,
-        PTPC,   8,
-        PFLV,   8,
-        BREV,   8,
-        PDTS,   8,
-        PKGA,   8,
-        PAMT,   8,
-        AC0F,   8,
-        AC1F,   8,
-        DTS3,   8,
-        DTS4,   8,
-        Offset (0xB0),
-        LTR1,   8,
-        LTR2,   8,
-        LTR3,   8,
-        LTR4,   8,
-        LTR5,   8,
-        LTR6,   8,
-        LTR7,   8,
-        LTR8,   8,
-        OBF1,   8,
-        OBF2,   8,
-        OBF3,   8,
-        OBF4,   8,
-        OBF5,   8,
-        OBF6,   8,
-        OBF7,   8,
-        OBF8,   8,
-        XHCI,   8,
-        XTUB,   32,
-        XTUS,   32,
-        XMPB,   32,
-        DDRF,   8,
-        RTD3,   8,
-        PEP0,   8,
-        PEP3,   8,
-        DPTF,   8,
-        SADE,   8,
-        SACR,   8,
-        SAHT,   8,
-        PCHD,   8,
-        PCHC,   8,
-        PCHH,   8,
-        CTDP,   8,
-        LPMP,   8,
-        LPMV,   8,
-        ECEU,   8,
-        TGFG,   16,
-        MEMD,   8,
-        MEMC,   8,
-        MEMH,   8,
-        FND1,   8,
-        FND2,   8,
-        AMBD,   8,
-        AMAT,   8,
-        AMPT,   8,
-        AMCT,   8,
-        AMHT,   8,
-        SKDE,   8,
-        SKAT,   8,
-        SKPT,   8,
-        SKCT,   8,
-        SKHT,   8,
-        EFDE,   8,
-        EFAT,   8,
-        EFPT,   8,
-        EFCT,   8,
-        EFHT,   8,
-        VRDE,   8,
-        VRAT,   8,
-        VRPT,   8,
-        VRCT,   8,
-        VRHT,   8,
-        DPAP,   8,
-        DPPP,   8,
-        DPCP,   8,
-        DCMP,   8,
-        TRTV,   8,
-        LPOE,   8,
-        LPOP,   8,
-        LPOS,   8,
-        LPOW,   8,
-        LPER,   8,
-        PPSZ,   32,
-        DISE,   8,
-        BGMA,   64,
-        BGMS,   8,
-        BGIA,   16,
-        ICNF,   8,
-        DSP0,   32,
-        DSP1,   32,
-        NFCE,   8,
-        DFUE,   8,
-        CODS,   8,
-        SNHE,   8,
-        S0ID,   8,
-        CTDB,   8,
-        DKSM,   8,
-        SIO1,   8,
-        SIO2,   8,
-        SPBA,   16,
-        XHPR,   8,
-        SDS0,   8,
-        SDS1,   16,
-        SDS2,   8,
-        SDS3,   8,
-        SDS4,   8,
-        SDS5,   8,
-        Offset (0x212),
-        RIC0,   8,
-        PEPY,   8,
-        DVS0,   8,
-        DVS1,   8,
-        DVS2,   8,
-        DVS3,   8,
-        GBSX,   8,
-        IUBE,   8,
-        IUCE,   8,
-        IUDE,   8,
-        ECNO,   8,
-        AUDD,   16,
-        DSPD,   16,
-        IC0D,   16,
-        IC1D,   16,
-        IC1S,   16,
-        VRRD,   16,
-        PSCP,   8,
-        RWAG,   8,
-        I20D,   16,
-        I21D,   16,
-        PLT0,   8,
-        RCG0,   16,
-        ECDB,   8,
-        P2ME,   8,
-        SSH0,   16,
-        SSL0,   16,
-        SSD0,   16,
-        FMH0,   16,
-        FML0,   16,
-        FMD0,   16,
-        FPH0,   16,
-        FPL0,   16,
-        FPD0,   16,
-        SSH1,   16,
-        SSL1,   16,
-        SSD1,   16,
-        FMH1,   16,
-        FML1,   16,
-        FMD1,   16,
-        FPH1,   16,
-        FPL1,   16,
-        FPD1,   16,
-        M0C0,   16,
-        M1C0,   16,
-        M2C0,   16,
-        M0C1,   16,
-        M1C1,   16,
-        M2C1,   16,
-        M0C2,   16,
-        M1C2,   16,
-        M0C3,   16,
-        M1C3,   16,
-        M0C4,   16,
-        M1C4,   16,
-        M0C5,   16,
-        M1C5,   16,
-        TBSF,   8,
-        GIRQ,   32,
-        DMTP,   8,
-        DMTD,   8,
-        DMSH,   8,
-        LANP,   8,
-        Offset (0x27E),
-        SHSB,   8,
-        PLCS,   8,
-        PLVL,   16,
-        GN1E,   8,
-        G1AT,   8,
-        G1PT,   8,
-        G1CT,   8,
-        G1HT,   8,
-        GN2E,   8,
-        G2AT,   8,
-        G2PT,   8,
-        G2CT,   8,
-        G2HT,   8,
-        WWSD,   8,
-        CVSD,   8,
-        SSDD,   8,
-        INLD,   8,
-        IFAT,   8,
-        IFPT,   8,
-        IFCT,   8,
-        IFHT,   8,
-        ANCS,   8,
-        SHTP,   8,
-        BCV4,   8,
-        WTV0,   8,
-        WTV1,   8,
-        APFU,   8,
-        SOHP,   8,
-        NOHP,   8,
-        TBSE,   8,
-        WKFN,   8,
-        PEPC,   16,
-        VRSD,   16,
-        PB1E,   8,
-        GNID,   8,
-        MPLT,   16,
-        GR13,   8,
-        CHGE,   8,
-        Offset (0x2B2),
-        SAC3,   8,
-        PCH3,   8,
-        MEM3,   8,
-        AMC3,   8,
-        SKC3,   8,
-        EFC3,   8,
-        VRC3,   8,
-        G1C3,   8,
-        G2C3,   8,
-        IFC3,   8,
-        Offset (0x2BF),
-        SPST,   8,
-        GN3E,   8,
-        G3AT,   8,
-        G3PT,   8,
-        G3CT,   8,
-        G3HT,   8,
-        GN4E,   8,
-        G4AT,   8,
-        G4PT,   8,
-        G4CT,   8,
-        G4HT,   8,
-        GN5E,   8,
-        G5AT,   8,
-        G5PT,   8,
-        G5CT,   8,
-        G5HT,   8,
-        GN6E,   8,
-        G6AT,   8,
-        G6PT,   8,
-        G6CT,   8,
-        G6HT,   8,
-        ECLP,   8,
-        Offset (0x2D6),
-        G3C3,   8,
-        G4C3,   8,
-        G5C3,   8,
-        G6C3,   8,
-        S1DE,   8,
-        S1AT,   8,
-        S1PT,   8,
-        S1CT,   8,
-        S1HT,   8,
-        S2DE,   8,
-        S2AT,   8,
-        S2PT,   8,
-        S2CT,   8,
-        S2HT,   8,
-        S3DE,   8,
-        S3AT,   8,
-        S3PT,   8,
-        S3CT,   8,
-        S3HT,   8,
-        S4DE,   8,
-        S4AT,   8,
-        S4PT,   8,
-        S4CT,   8,
-        S4HT,   8,
-        S5DE,   8,
-        S5AT,   8,
-        S5PT,   8,
-        S5CT,   8,
-        S5HT,   8,
-        S6DE,   8,
-        S6AT,   8,
-        S6PT,   8,
-        S6CT,   8,
-        S6HT,   8,
-        S7DE,   8,
-        S7AT,   8,
-        S7PT,   8,
-        S7CT,   8,
-        S7HT,   8,
-        S1S3,   8,
-        S2S3,   8,
-        S3S3,   8,
-        S4S3,   8,
-        S5S3,   8,
-        S6S3,   8,
-        S7S3,   8,
-        DACT,   8,
-        Offset (0x33E),
-        TBTS,   8,
-        Offset (0x348),
+        OSYS,   16, 
+        SMIF,   8, 
+        PRM0,   8, 
+        PRM1,   8, 
+        SCIF,   8, 
+        PRM2,   8, 
+        PRM3,   8, 
+        LCKF,   8, 
+        PRM4,   8, 
+        PRM5,   8, 
+        P80D,   32, 
+        PWRS,   8, 
+        DBGS,   8, 
+        THOF,   8, 
+        ACT1,   8, 
+        ACTT,   8, 
+        PSVT,   8, 
+        TC1V,   8, 
+        TC2V,   8, 
+        TSPV,   8, 
+        CRTT,   8, 
+        DTSE,   8, 
+        DTS1,   8, 
+        DTS2,   8, 
+        DTSF,   8, 
+        Offset (0x1E), 
+        Offset (0x25), 
+        REVN,   8, 
+        Offset (0x28), 
+        APIC,   8, 
+        TCNT,   8, 
+        PCP0,   8, 
+        PCP1,   8, 
+        PPCM,   8, 
+        PPMF,   32, 
+        C67L,   8, 
+        NATP,   8, 
+        CMAP,   8, 
+        CMBP,   8, 
+        LPTP,   8, 
+        FDCP,   8, 
+        CMCP,   8, 
+        CIRP,   8, 
+        SMSC,   8, 
+        W381,   8, 
+        SMC1,   8, 
+        EMAE,   8, 
+        EMAP,   16, 
+        EMAL,   16, 
+        Offset (0x42), 
+        MEFE,   8, 
+        DSTS,   8, 
+        TL2F,   32, 
+        MORD,   8, 
+        TCGP,   8, 
+        PPRP,   32, 
+        PPRQ,   8, 
+        LPPR,   8, 
+        GTF0,   56, 
+        GTF2,   56, 
+        IDEM,   8, 
+        GTF1,   56, 
+        BID,    16, 
+        PLID,   8, 
+        ECTG,   8, 
+        SDPO,   8, 
+        SKID,   8, 
+        Offset (0x70), 
+        OSCC,   8, 
+        NEXP,   8, 
+        SBV1,   8, 
+        SBV2,   8, 
+        Offset (0x7A), 
+        DSEN,   8, 
+        ECON,   8, 
+        GPIC,   8, 
+        CTYP,   8, 
+        L01C,   8, 
+        VFN0,   8, 
+        VFN1,   8, 
+        VFN2,   8, 
+        VFN3,   8, 
+        VFN4,   8, 
+        VFN5,   8, 
+        VFN6,   8, 
+        VFN7,   8, 
+        VFN8,   8, 
+        VFN9,   8, 
+        Offset (0x8F), 
+        ATMC,   8, 
+        PTMC,   8, 
+        ATRA,   8, 
+        PTRA,   8, 
+        PNHM,   32, 
+        Offset (0x9F), 
+        RTIP,   8, 
+        TSOD,   8, 
+        ATPC,   8, 
+        PTPC,   8, 
+        PFLV,   8, 
+        BREV,   8, 
+        PDTS,   8, 
+        PKGA,   8, 
+        PAMT,   8, 
+        AC0F,   8, 
+        AC1F,   8, 
+        DTS3,   8, 
+        DTS4,   8, 
+        Offset (0xB0), 
+        LTR1,   8, 
+        LTR2,   8, 
+        LTR3,   8, 
+        LTR4,   8, 
+        LTR5,   8, 
+        LTR6,   8, 
+        LTR7,   8, 
+        LTR8,   8, 
+        OBF1,   8, 
+        OBF2,   8, 
+        OBF3,   8, 
+        OBF4,   8, 
+        OBF5,   8, 
+        OBF6,   8, 
+        OBF7,   8, 
+        OBF8,   8, 
+        XHCI,   8, 
+        XTUB,   32, 
+        XTUS,   32, 
+        XMPB,   32, 
+        DDRF,   8, 
+        RTD3,   8, 
+        PEP0,   8, 
+        PEP3,   8, 
+        DPTF,   8, 
+        SADE,   8, 
+        SACR,   8, 
+        SAHT,   8, 
+        PCHD,   8, 
+        PCHC,   8, 
+        PCHH,   8, 
+        CTDP,   8, 
+        LPMP,   8, 
+        LPMV,   8, 
+        ECEU,   8, 
+        TGFG,   16, 
+        MEMD,   8, 
+        MEMC,   8, 
+        MEMH,   8, 
+        FND1,   8, 
+        FND2,   8, 
+        AMBD,   8, 
+        AMAT,   8, 
+        AMPT,   8, 
+        AMCT,   8, 
+        AMHT,   8, 
+        SKDE,   8, 
+        SKAT,   8, 
+        SKPT,   8, 
+        SKCT,   8, 
+        SKHT,   8, 
+        EFDE,   8, 
+        EFAT,   8, 
+        EFPT,   8, 
+        EFCT,   8, 
+        EFHT,   8, 
+        VRDE,   8, 
+        VRAT,   8, 
+        VRPT,   8, 
+        VRCT,   8, 
+        VRHT,   8, 
+        DPAP,   8, 
+        DPPP,   8, 
+        DPCP,   8, 
+        DCMP,   8, 
+        TRTV,   8, 
+        LPOE,   8, 
+        LPOP,   8, 
+        LPOS,   8, 
+        LPOW,   8, 
+        LPER,   8, 
+        PPSZ,   32, 
+        DISE,   8, 
+        BGMA,   64, 
+        BGMS,   8, 
+        BGIA,   16, 
+        ICNF,   8, 
+        DSP0,   32, 
+        DSP1,   32, 
+        NFCE,   8, 
+        DFUE,   8, 
+        CODS,   8, 
+        SNHE,   8, 
+        S0ID,   8, 
+        CTDB,   8, 
+        DKSM,   8, 
+        SIO1,   8, 
+        SIO2,   8, 
+        SPBA,   16, 
+        XHPR,   8, 
+        SDS0,   8, 
+        SDS1,   16, 
+        SDS2,   8, 
+        SDS3,   8, 
+        SDS4,   8, 
+        SDS5,   8, 
+        Offset (0x212), 
+        RIC0,   8, 
+        PEPY,   8, 
+        DVS0,   8, 
+        DVS1,   8, 
+        DVS2,   8, 
+        DVS3,   8, 
+        GBSX,   8, 
+        IUBE,   8, 
+        IUCE,   8, 
+        IUDE,   8, 
+        ECNO,   8, 
+        AUDD,   16, 
+        DSPD,   16, 
+        IC0D,   16, 
+        IC1D,   16, 
+        IC1S,   16, 
+        VRRD,   16, 
+        PSCP,   8, 
+        RWAG,   8, 
+        I20D,   16, 
+        I21D,   16, 
+        PLT0,   8, 
+        RCG0,   16, 
+        ECDB,   8, 
+        P2ME,   8, 
+        SSH0,   16, 
+        SSL0,   16, 
+        SSD0,   16, 
+        FMH0,   16, 
+        FML0,   16, 
+        FMD0,   16, 
+        FPH0,   16, 
+        FPL0,   16, 
+        FPD0,   16, 
+        SSH1,   16, 
+        SSL1,   16, 
+        SSD1,   16, 
+        FMH1,   16, 
+        FML1,   16, 
+        FMD1,   16, 
+        FPH1,   16, 
+        FPL1,   16, 
+        FPD1,   16, 
+        M0C0,   16, 
+        M1C0,   16, 
+        M2C0,   16, 
+        M0C1,   16, 
+        M1C1,   16, 
+        M2C1,   16, 
+        M0C2,   16, 
+        M1C2,   16, 
+        M0C3,   16, 
+        M1C3,   16, 
+        M0C4,   16, 
+        M1C4,   16, 
+        M0C5,   16, 
+        M1C5,   16, 
+        TBSF,   8, 
+        GIRQ,   32, 
+        DMTP,   8, 
+        DMTD,   8, 
+        DMSH,   8, 
+        LANP,   8, 
+        Offset (0x27E), 
+        SHSB,   8, 
+        PLCS,   8, 
+        PLVL,   16, 
+        GN1E,   8, 
+        G1AT,   8, 
+        G1PT,   8, 
+        G1CT,   8, 
+        G1HT,   8, 
+        GN2E,   8, 
+        G2AT,   8, 
+        G2PT,   8, 
+        G2CT,   8, 
+        G2HT,   8, 
+        WWSD,   8, 
+        CVSD,   8, 
+        SSDD,   8, 
+        INLD,   8, 
+        IFAT,   8, 
+        IFPT,   8, 
+        IFCT,   8, 
+        IFHT,   8, 
+        ANCS,   8, 
+        SHTP,   8, 
+        BCV4,   8, 
+        WTV0,   8, 
+        WTV1,   8, 
+        APFU,   8, 
+        SOHP,   8, 
+        NOHP,   8, 
+        TBSE,   8, 
+        WKFN,   8, 
+        PEPC,   16, 
+        VRSD,   16, 
+        PB1E,   8, 
+        GNID,   8, 
+        MPLT,   16, 
+        GR13,   8, 
+        CHGE,   8, 
+        Offset (0x2B2), 
+        SAC3,   8, 
+        PCH3,   8, 
+        MEM3,   8, 
+        AMC3,   8, 
+        SKC3,   8, 
+        EFC3,   8, 
+        VRC3,   8, 
+        G1C3,   8, 
+        G2C3,   8, 
+        IFC3,   8, 
+        Offset (0x2BF), 
+        SPST,   8, 
+        GN3E,   8, 
+        G3AT,   8, 
+        G3PT,   8, 
+        G3CT,   8, 
+        G3HT,   8, 
+        GN4E,   8, 
+        G4AT,   8, 
+        G4PT,   8, 
+        G4CT,   8, 
+        G4HT,   8, 
+        GN5E,   8, 
+        G5AT,   8, 
+        G5PT,   8, 
+        G5CT,   8, 
+        G5HT,   8, 
+        GN6E,   8, 
+        G6AT,   8, 
+        G6PT,   8, 
+        G6CT,   8, 
+        G6HT,   8, 
+        ECLP,   8, 
+        Offset (0x2D6), 
+        G3C3,   8, 
+        G4C3,   8, 
+        G5C3,   8, 
+        G6C3,   8, 
+        S1DE,   8, 
+        S1AT,   8, 
+        S1PT,   8, 
+        S1CT,   8, 
+        S1HT,   8, 
+        S2DE,   8, 
+        S2AT,   8, 
+        S2PT,   8, 
+        S2CT,   8, 
+        S2HT,   8, 
+        S3DE,   8, 
+        S3AT,   8, 
+        S3PT,   8, 
+        S3CT,   8, 
+        S3HT,   8, 
+        S4DE,   8, 
+        S4AT,   8, 
+        S4PT,   8, 
+        S4CT,   8, 
+        S4HT,   8, 
+        S5DE,   8, 
+        S5AT,   8, 
+        S5PT,   8, 
+        S5CT,   8, 
+        S5HT,   8, 
+        S6DE,   8, 
+        S6AT,   8, 
+        S6PT,   8, 
+        S6CT,   8, 
+        S6HT,   8, 
+        S7DE,   8, 
+        S7AT,   8, 
+        S7PT,   8, 
+        S7CT,   8, 
+        S7HT,   8, 
+        S1S3,   8, 
+        S2S3,   8, 
+        S3S3,   8, 
+        S4S3,   8, 
+        S5S3,   8, 
+        S6S3,   8, 
+        S7S3,   8, 
+        DACT,   8, 
+        Offset (0x33E), 
+        TBTS,   8, 
+        Offset (0x348), 
         OSTY,   16
     }
 
@@ -634,209 +634,209 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0x001FFFFF,
-                Zero,
-                LNKF,
+                0x001FFFFF, 
+                Zero, 
+                LNKF, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                One,
-                LNKD,
+                0x001FFFFF, 
+                One, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                0x02,
-                LNKC,
+                0x001FFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                0x03,
-                LNKA,
+                0x001FFFFF, 
+                0x03, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0014FFFF,
-                Zero,
-                LNKA,
+                0x0014FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001DFFFF,
-                Zero,
-                LNKH,
+                0x001DFFFF, 
+                Zero, 
+                LNKH, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001AFFFF,
-                Zero,
-                LNKA,
+                0x001AFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001BFFFF,
-                Zero,
-                LNKG,
+                0x001BFFFF, 
+                Zero, 
+                LNKG, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                Zero,
-                LNKA,
+                0x0016FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                One,
-                LNKD,
+                0x0016FFFF, 
+                One, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                0x02,
-                LNKC,
+                0x0016FFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                0x03,
-                LNKB,
+                0x0016FFFF, 
+                0x03, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                Zero,
-                LNKA,
+                0x001CFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                One,
-                LNKB,
+                0x001CFFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                0x02,
-                LNKC,
+                0x001CFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                0x03,
-                LNKD,
+                0x001CFFFF, 
+                0x03, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                Zero,
-                LNKA,
+                0x0001FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                One,
-                LNKB,
+                0x0001FFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                0x02,
-                LNKC,
+                0x0001FFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                0x03,
-                LNKD,
+                0x0001FFFF, 
+                0x03, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0002FFFF,
-                Zero,
-                LNKA,
+                0x0002FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0003FFFF,
-                Zero,
-                LNKA,
+                0x0003FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                Zero,
-                LNKA,
+                0x0004FFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                One,
-                LNKB,
+                0x0004FFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                0x02,
-                LNKC,
+                0x0004FFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                0x03,
-                LNKD,
+                0x0004FFFF, 
+                0x03, 
+                LNKD, 
                 Zero
             }
         })
@@ -844,209 +844,209 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0x001FFFFF,
-                Zero,
-                Zero,
+                0x001FFFFF, 
+                Zero, 
+                Zero, 
                 0x15
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                One,
-                Zero,
+                0x001FFFFF, 
+                One, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                0x02,
-                Zero,
+                0x001FFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001FFFFF,
-                0x03,
-                Zero,
+                0x001FFFFF, 
+                0x03, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0014FFFF,
-                Zero,
-                Zero,
+                0x0014FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001DFFFF,
-                Zero,
-                Zero,
+                0x001DFFFF, 
+                Zero, 
+                Zero, 
                 0x17
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001AFFFF,
-                Zero,
-                Zero,
+                0x001AFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001BFFFF,
-                Zero,
-                Zero,
+                0x001BFFFF, 
+                Zero, 
+                Zero, 
                 0x16
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                Zero,
-                Zero,
+                0x0016FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                One,
-                Zero,
+                0x0016FFFF, 
+                One, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                0x02,
-                Zero,
+                0x0016FFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0016FFFF,
-                0x03,
-                Zero,
+                0x0016FFFF, 
+                0x03, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                Zero,
-                Zero,
+                0x001CFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                One,
-                Zero,
+                0x001CFFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                0x02,
-                Zero,
+                0x001CFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0x001CFFFF,
-                0x03,
-                Zero,
+                0x001CFFFF, 
+                0x03, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                Zero,
-                Zero,
+                0x0001FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                One,
-                Zero,
+                0x0001FFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                0x02,
-                Zero,
+                0x0001FFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0001FFFF,
-                0x03,
-                Zero,
+                0x0001FFFF, 
+                0x03, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0002FFFF,
-                Zero,
-                Zero,
+                0x0002FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0003FFFF,
-                Zero,
-                Zero,
+                0x0003FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                Zero,
-                Zero,
+                0x0004FFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                One,
-                Zero,
+                0x0004FFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                0x02,
-                Zero,
+                0x0004FFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0x0004FFFF,
-                0x03,
-                Zero,
+                0x0004FFFF, 
+                0x03, 
+                Zero, 
                 0x13
             }
         })
@@ -1054,33 +1054,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKA,
+                0xFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKB,
+                0xFFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKC,
+                0xFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKD,
+                0xFFFF, 
+                0x03, 
+                LNKD, 
                 Zero
             }
         })
@@ -1088,33 +1088,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x13
             }
         })
@@ -1122,33 +1122,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKB,
+                0xFFFF, 
+                Zero, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKC,
+                0xFFFF, 
+                One, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKD,
+                0xFFFF, 
+                0x02, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKA,
+                0xFFFF, 
+                0x03, 
+                LNKA, 
                 Zero
             }
         })
@@ -1156,33 +1156,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x10
             }
         })
@@ -1190,33 +1190,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKC,
+                0xFFFF, 
+                Zero, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKD,
+                0xFFFF, 
+                One, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKA,
+                0xFFFF, 
+                0x02, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKB,
+                0xFFFF, 
+                0x03, 
+                LNKB, 
                 Zero
             }
         })
@@ -1224,33 +1224,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x11
             }
         })
@@ -1258,33 +1258,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKD,
+                0xFFFF, 
+                Zero, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKA,
+                0xFFFF, 
+                One, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKB,
+                0xFFFF, 
+                0x02, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKC,
+                0xFFFF, 
+                0x03, 
+                LNKC, 
                 Zero
             }
         })
@@ -1292,33 +1292,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x12
             }
         })
@@ -1326,33 +1326,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKA,
+                0xFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKB,
+                0xFFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKC,
+                0xFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKD,
+                0xFFFF, 
+                0x03, 
+                LNKD, 
                 Zero
             }
         })
@@ -1360,33 +1360,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x13
             }
         })
@@ -1394,33 +1394,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKB,
+                0xFFFF, 
+                Zero, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKC,
+                0xFFFF, 
+                One, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKD,
+                0xFFFF, 
+                0x02, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKA,
+                0xFFFF, 
+                0x03, 
+                LNKA, 
                 Zero
             }
         })
@@ -1428,33 +1428,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x10
             }
         })
@@ -1462,33 +1462,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKC,
+                0xFFFF, 
+                Zero, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKD,
+                0xFFFF, 
+                One, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKA,
+                0xFFFF, 
+                0x02, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKB,
+                0xFFFF, 
+                0x03, 
+                LNKB, 
                 Zero
             }
         })
@@ -1496,33 +1496,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x11
             }
         })
@@ -1530,33 +1530,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKD,
+                0xFFFF, 
+                Zero, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKA,
+                0xFFFF, 
+                One, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKB,
+                0xFFFF, 
+                0x02, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKC,
+                0xFFFF, 
+                0x03, 
+                LNKC, 
                 Zero
             }
         })
@@ -1564,33 +1564,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x12
             }
         })
@@ -1598,33 +1598,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKA,
+                0xFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKB,
+                0xFFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKC,
+                0xFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKD,
+                0xFFFF, 
+                0x03, 
+                LNKD, 
                 Zero
             }
         })
@@ -1632,33 +1632,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x13
             }
         })
@@ -1666,33 +1666,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKB,
+                0xFFFF, 
+                Zero, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKC,
+                0xFFFF, 
+                One, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKD,
+                0xFFFF, 
+                0x02, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKA,
+                0xFFFF, 
+                0x03, 
+                LNKA, 
                 Zero
             }
         })
@@ -1700,33 +1700,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x10
             }
         })
@@ -1734,33 +1734,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKC,
+                0xFFFF, 
+                Zero, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKD,
+                0xFFFF, 
+                One, 
+                LNKD, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKA,
+                0xFFFF, 
+                0x02, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKB,
+                0xFFFF, 
+                0x03, 
+                LNKB, 
                 Zero
             }
         })
@@ -1768,33 +1768,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x13
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x11
             }
         })
@@ -1802,33 +1802,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                LNKA,
+                0xFFFF, 
+                Zero, 
+                LNKA, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                LNKB,
+                0xFFFF, 
+                One, 
+                LNKB, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                LNKC,
+                0xFFFF, 
+                0x02, 
+                LNKC, 
                 Zero
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                LNKD,
+                0xFFFF, 
+                0x03, 
+                LNKD, 
                 Zero
             }
         })
@@ -1836,33 +1836,33 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Package (0x04)
             {
-                0xFFFF,
-                Zero,
-                Zero,
+                0xFFFF, 
+                Zero, 
+                Zero, 
                 0x10
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                One,
-                Zero,
+                0xFFFF, 
+                One, 
+                Zero, 
                 0x11
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x02,
-                Zero,
+                0xFFFF, 
+                0x02, 
+                Zero, 
                 0x12
-            },
+            }, 
 
             Package (0x04)
             {
-                0xFFFF,
-                0x03,
-                Zero,
+                0xFFFF, 
+                0x03, 
+                Zero, 
                 0x13
             }
         })
@@ -1907,69 +1907,69 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (HBUS, PCI_Config, Zero, 0x0100)
             Field (HBUS, DWordAcc, NoLock, Preserve)
             {
-                Offset (0x40),
-                EPEN,   1,
-                    ,   11,
-                EPBR,   20,
-                Offset (0x48),
-                MHEN,   1,
-                    ,   14,
-                MHBR,   17,
-                Offset (0x50),
-                GCLK,   1,
-                Offset (0x54),
-                D0EN,   1,
-                D1F2,   1,
-                D1F1,   1,
-                D1F0,   1,
-                Offset (0x60),
-                PXEN,   1,
-                PXSZ,   2,
-                    ,   23,
-                PXBR,   6,
-                Offset (0x68),
-                DIEN,   1,
-                    ,   11,
-                DIBR,   20,
-                Offset (0x70),
-                    ,   20,
-                MEBR,   12,
-                Offset (0x80),
-                    ,   4,
-                PM0H,   2,
-                Offset (0x81),
-                PM1L,   2,
-                    ,   2,
-                PM1H,   2,
-                Offset (0x82),
-                PM2L,   2,
-                    ,   2,
-                PM2H,   2,
-                Offset (0x83),
-                PM3L,   2,
-                    ,   2,
-                PM3H,   2,
-                Offset (0x84),
-                PM4L,   2,
-                    ,   2,
-                PM4H,   2,
-                Offset (0x85),
-                PM5L,   2,
-                    ,   2,
-                PM5H,   2,
-                Offset (0x86),
-                PM6L,   2,
-                    ,   2,
-                PM6H,   2,
-                Offset (0x87),
-                Offset (0xA8),
-                    ,   20,
-                TUUD,   19,
-                Offset (0xBC),
-                    ,   20,
-                TLUD,   12,
-                Offset (0xC8),
-                    ,   7,
+                Offset (0x40), 
+                EPEN,   1, 
+                    ,   11, 
+                EPBR,   20, 
+                Offset (0x48), 
+                MHEN,   1, 
+                    ,   14, 
+                MHBR,   17, 
+                Offset (0x50), 
+                GCLK,   1, 
+                Offset (0x54), 
+                D0EN,   1, 
+                D1F2,   1, 
+                D1F1,   1, 
+                D1F0,   1, 
+                Offset (0x60), 
+                PXEN,   1, 
+                PXSZ,   2, 
+                    ,   23, 
+                PXBR,   6, 
+                Offset (0x68), 
+                DIEN,   1, 
+                    ,   11, 
+                DIBR,   20, 
+                Offset (0x70), 
+                    ,   20, 
+                MEBR,   12, 
+                Offset (0x80), 
+                    ,   4, 
+                PM0H,   2, 
+                Offset (0x81), 
+                PM1L,   2, 
+                    ,   2, 
+                PM1H,   2, 
+                Offset (0x82), 
+                PM2L,   2, 
+                    ,   2, 
+                PM2H,   2, 
+                Offset (0x83), 
+                PM3L,   2, 
+                    ,   2, 
+                PM3H,   2, 
+                Offset (0x84), 
+                PM4L,   2, 
+                    ,   2, 
+                PM4H,   2, 
+                Offset (0x85), 
+                PM5L,   2, 
+                    ,   2, 
+                PM5H,   2, 
+                Offset (0x86), 
+                PM6L,   2, 
+                    ,   2, 
+                PM6H,   2, 
+                Offset (0x87), 
+                Offset (0xA8), 
+                    ,   20, 
+                TUUD,   19, 
+                Offset (0xBC), 
+                    ,   20, 
+                TLUD,   12, 
+                Offset (0xC8), 
+                    ,   7, 
                 HTSE,   1
             }
 
@@ -3506,27 +3506,27 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Name (DCAT, Package (0x16)
                     {
-                        One,
-                        0x02,
-                        0x03,
-                        Zero,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0x05,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0x06,
-                        0xFF,
-                        0xFF,
-                        0xFF,
-                        0x0A,
-                        0xFF,
-                        0xFF,
+                        One, 
+                        0x02, 
+                        0x03, 
+                        Zero, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0x05, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0x06, 
+                        0xFF, 
+                        0xFF, 
+                        0xFF, 
+                        0x0A, 
+                        0xFF, 
+                        0xFF, 
                         0xFF
                     })
                     Mutex (MUT0, 0x00)
@@ -3581,78 +3581,78 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     OperationRegion (IOID, SystemIO, SP1O, 0x02)
                     Field (IOID, ByteAcc, NoLock, Preserve)
                     {
-                        INDX,   8,
+                        INDX,   8, 
                         DATA,   8
                     }
 
                     IndexField (INDX, DATA, ByteAcc, NoLock, Preserve)
                     {
-                        Offset (0x07),
-                        LDN,    8,
-                        Offset (0x21),
-                        SCF1,   8,
-                        SCF2,   8,
-                        SCF3,   8,
-                        SCF4,   8,
-                        SCF5,   8,
-                        SCF6,   8,
-                        Offset (0x29),
-                        CKCF,   8,
-                        Offset (0x30),
-                        ACTR,   8,
-                        Offset (0x60),
-                        IOAH,   8,
-                        IOAL,   8,
-                        IOH2,   8,
-                        IOL2,   8,
-                        Offset (0x70),
-                        INTR,   8,
-                        Offset (0x74),
-                        DMCH,   8,
-                        Offset (0xD0),
-                        RGD0,   8,
-                        RGD1,   8,
-                        RGD2,   8,
-                        RGD3,   8,
-                        RGD4,   8,
-                        Offset (0xE0),
-                        RGE0,   8,
-                        RGE1,   8,
-                        RGE2,   8,
-                        RGE3,   8,
-                        RGE4,   8,
-                        RGE5,   8,
-                        RGE6,   8,
-                        RGE7,   8,
-                        RGE8,   8,
-                        RGE9,   8,
-                        Offset (0xF0),
-                        OPT0,   8,
-                        OPT1,   8,
-                        OPT2,   8,
-                        OPT3,   8,
-                        OPT4,   8,
-                        OPT5,   8,
-                        OPT6,   8,
-                        OPT7,   8,
-                        OPT8,   8,
+                        Offset (0x07), 
+                        LDN,    8, 
+                        Offset (0x21), 
+                        SCF1,   8, 
+                        SCF2,   8, 
+                        SCF3,   8, 
+                        SCF4,   8, 
+                        SCF5,   8, 
+                        SCF6,   8, 
+                        Offset (0x29), 
+                        CKCF,   8, 
+                        Offset (0x30), 
+                        ACTR,   8, 
+                        Offset (0x60), 
+                        IOAH,   8, 
+                        IOAL,   8, 
+                        IOH2,   8, 
+                        IOL2,   8, 
+                        Offset (0x70), 
+                        INTR,   8, 
+                        Offset (0x74), 
+                        DMCH,   8, 
+                        Offset (0xD0), 
+                        RGD0,   8, 
+                        RGD1,   8, 
+                        RGD2,   8, 
+                        RGD3,   8, 
+                        RGD4,   8, 
+                        Offset (0xE0), 
+                        RGE0,   8, 
+                        RGE1,   8, 
+                        RGE2,   8, 
+                        RGE3,   8, 
+                        RGE4,   8, 
+                        RGE5,   8, 
+                        RGE6,   8, 
+                        RGE7,   8, 
+                        RGE8,   8, 
+                        RGE9,   8, 
+                        Offset (0xF0), 
+                        OPT0,   8, 
+                        OPT1,   8, 
+                        OPT2,   8, 
+                        OPT3,   8, 
+                        OPT4,   8, 
+                        OPT5,   8, 
+                        OPT6,   8, 
+                        OPT7,   8, 
+                        OPT8,   8, 
                         OPT9,   8
                     }
 
                     OperationRegion (RNTR, SystemIO, PMEB, PMEL)
                     Field (RNTR, ByteAcc, NoLock, Preserve)
                     {
-                        PMES,   8,
-                        Offset (0x04),
-                        PMEE,   1,
-                        Offset (0x05),
-                        Offset (0x08),
-                        PMS3,   8,
-                        PMS2,   8,
-                        PMS1,   8,
-                        Offset (0x0C),
-                        PME3,   8,
-                        PME2,   8,
+                        PMES,   8, 
+                        Offset (0x04), 
+                        PMEE,   1, 
+                        Offset (0x05), 
+                        Offset (0x08), 
+                        PMS3,   8, 
+                        PMS2,   8, 
+                        PMS1,   8, 
+                        Offset (0x0C), 
+                        PME3,   8, 
+                        PME2,   8, 
                         PME1,   8
                     }
 
@@ -4759,51 +4759,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -4821,9 +4821,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -4871,7 +4871,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -4879,7 +4879,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -4926,7 +4926,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -5007,51 +5007,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -5069,9 +5069,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -5119,7 +5119,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -5127,7 +5127,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -5174,7 +5174,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -5255,51 +5255,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -5317,9 +5317,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -5367,7 +5367,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -5375,7 +5375,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -5422,7 +5422,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -5503,51 +5503,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -5565,9 +5565,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -5615,7 +5615,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -5623,7 +5623,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -5670,7 +5670,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -5751,51 +5751,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -5813,9 +5813,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -5863,7 +5863,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -5871,7 +5871,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -5918,7 +5918,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -5999,51 +5999,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -6061,9 +6061,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -6111,7 +6111,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -6119,7 +6119,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -6166,7 +6166,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -6247,51 +6247,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -6309,9 +6309,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -6359,7 +6359,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -6367,7 +6367,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -6414,7 +6414,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -6495,51 +6495,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0380)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
-                    VDID,   32,
-                    Offset (0x19),
-                    SCBN,   8,
-                    Offset (0x50),
-                    L0SE,   1,
-                        ,   3,
-                    LDIS,   1,
-                    Offset (0x51),
-                    Offset (0x52),
-                        ,   13,
-                    LASX,   1,
-                    Offset (0x54),
-                        ,   6,
-                    HPCE,   1,
-                    Offset (0x5A),
-                    ABPX,   1,
-                        ,   2,
-                    PDCX,   1,
-                        ,   2,
-                    PDSX,   1,
-                    Offset (0x5B),
-                    Offset (0x60),
-                    Offset (0x62),
-                    PSPX,   1,
-                    PMEP,   1,
-                    Offset (0xA4),
-                    D3HT,   2,
-                    Offset (0xD8),
-                        ,   30,
-                    HPEX,   1,
-                    PMEX,   1,
-                    Offset (0xE2),
-                        ,   2,
-                    L23E,   1,
-                    L23R,   1,
-                    Offset (0x324),
-                        ,   3,
+                    VDID,   32, 
+                    Offset (0x19), 
+                    SCBN,   8, 
+                    Offset (0x50), 
+                    L0SE,   1, 
+                        ,   3, 
+                    LDIS,   1, 
+                    Offset (0x51), 
+                    Offset (0x52), 
+                        ,   13, 
+                    LASX,   1, 
+                    Offset (0x54), 
+                        ,   6, 
+                    HPCE,   1, 
+                    Offset (0x5A), 
+                    ABPX,   1, 
+                        ,   2, 
+                    PDCX,   1, 
+                        ,   2, 
+                    PDSX,   1, 
+                    Offset (0x5B), 
+                    Offset (0x60), 
+                    Offset (0x62), 
+                    PSPX,   1, 
+                    PMEP,   1, 
+                    Offset (0xA4), 
+                    D3HT,   2, 
+                    Offset (0xD8), 
+                        ,   30, 
+                    HPEX,   1, 
+                    PMEX,   1, 
+                    Offset (0xE2), 
+                        ,   2, 
+                    L23E,   1, 
+                    L23R,   1, 
+                    Offset (0x324), 
+                        ,   3, 
                     LEDM,   1
                 }
 
                 Field (PXCS, AnyAcc, NoLock, WriteAsZeros)
                 {
-                    Offset (0xDC),
-                        ,   30,
-                    HPSX,   1,
+                    Offset (0xDC), 
+                        ,   30, 
+                    HPSX,   1, 
                     PMSX,   1
                 }
 
@@ -6557,9 +6557,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                 Name (LTRV, Package (0x04)
                 {
-                    Zero,
-                    Zero,
-                    Zero,
+                    Zero, 
+                    Zero, 
+                    Zero, 
                     Zero
                 })
                 Name (OPTS, Zero)
@@ -6607,7 +6607,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                         Else
@@ -6615,7 +6615,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                             Return (Buffer (0x10)
                                             {
                                                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                                             })
                                         }
                                     }
@@ -6662,7 +6662,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
 
@@ -6768,95 +6768,95 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     OperationRegion (PNVA, SystemMemory, PNVB, PNVL)
     Field (PNVA, AnyAcc, Lock, Preserve)
     {
-        RCRV,   32,
-        PCHS,   16,
-        PCHG,   16,
-        RPA0,   32,
-        RPA1,   32,
-        RPA2,   32,
-        RPA3,   32,
-        RPA4,   32,
-        RPA5,   32,
-        RPA6,   32,
-        RPA7,   32,
-        SRMB,   32,
-        ADB0,   32,
-        ADB1,   32,
-        ADI0,   32,
-        GPMN,   32,
-        GPMX,   32,
-        PML1,   16,
-        PML2,   16,
-        PML3,   16,
-        PML4,   16,
-        PML5,   16,
-        PML6,   16,
-        PML7,   16,
-        PML8,   16,
-        PNL1,   16,
-        PNL2,   16,
-        PNL3,   16,
-        PNL4,   16,
-        PNL5,   16,
-        PNL6,   16,
-        PNL7,   16,
-        PNL8,   16,
-        U0C0,   32,
-        U1C0,   32,
-        ADFM,   32,
-        ADBT,   8,
-        XHPC,   8,
-        XRPC,   8,
-        XSPC,   8,
-        XSPA,   8,
-        SMD0,   8,
-        SMD1,   8,
-        SMD2,   8,
-        SMD3,   8,
-        SMD4,   8,
-        SMD5,   8,
-        SMD6,   8,
-        SMD7,   8,
-        SIR0,   8,
-        SIR1,   8,
-        SIR2,   8,
-        SIR3,   8,
-        SIR4,   8,
-        SIR5,   8,
-        SIR6,   8,
-        SIR7,   8,
-        SB00,   32,
-        SB01,   32,
-        SB02,   32,
-        SB03,   32,
-        SB04,   32,
-        SB05,   32,
-        SB06,   32,
-        SB07,   32,
-        SB10,   32,
-        SB11,   32,
-        SB12,   32,
-        SB13,   32,
-        SB14,   32,
-        SB15,   32,
-        SB16,   32,
-        SB17,   32,
-        SMGP,   8,
-        GBEP,   8,
-        PMSI,   8,
-        PMCP,   8,
-        PCLP,   8,
-        PL1P,   16,
-        PL1A,   32,
-        PL1B,   8,
-        PEPL,   16,
-        PRPL,   16,
-        PCIT,   8,
-        PLTP,   16,
-        PLTD,   32,
-        PED2,   16,
-        PRDC,   16,
-        PED1,   16,
+        RCRV,   32, 
+        PCHS,   16, 
+        PCHG,   16, 
+        RPA0,   32, 
+        RPA1,   32, 
+        RPA2,   32, 
+        RPA3,   32, 
+        RPA4,   32, 
+        RPA5,   32, 
+        RPA6,   32, 
+        RPA7,   32, 
+        SRMB,   32, 
+        ADB0,   32, 
+        ADB1,   32, 
+        ADI0,   32, 
+        GPMN,   32, 
+        GPMX,   32, 
+        PML1,   16, 
+        PML2,   16, 
+        PML3,   16, 
+        PML4,   16, 
+        PML5,   16, 
+        PML6,   16, 
+        PML7,   16, 
+        PML8,   16, 
+        PNL1,   16, 
+        PNL2,   16, 
+        PNL3,   16, 
+        PNL4,   16, 
+        PNL5,   16, 
+        PNL6,   16, 
+        PNL7,   16, 
+        PNL8,   16, 
+        U0C0,   32, 
+        U1C0,   32, 
+        ADFM,   32, 
+        ADBT,   8, 
+        XHPC,   8, 
+        XRPC,   8, 
+        XSPC,   8, 
+        XSPA,   8, 
+        SMD0,   8, 
+        SMD1,   8, 
+        SMD2,   8, 
+        SMD3,   8, 
+        SMD4,   8, 
+        SMD5,   8, 
+        SMD6,   8, 
+        SMD7,   8, 
+        SIR0,   8, 
+        SIR1,   8, 
+        SIR2,   8, 
+        SIR3,   8, 
+        SIR4,   8, 
+        SIR5,   8, 
+        SIR6,   8, 
+        SIR7,   8, 
+        SB00,   32, 
+        SB01,   32, 
+        SB02,   32, 
+        SB03,   32, 
+        SB04,   32, 
+        SB05,   32, 
+        SB06,   32, 
+        SB07,   32, 
+        SB10,   32, 
+        SB11,   32, 
+        SB12,   32, 
+        SB13,   32, 
+        SB14,   32, 
+        SB15,   32, 
+        SB16,   32, 
+        SB17,   32, 
+        SMGP,   8, 
+        GBEP,   8, 
+        PMSI,   8, 
+        PMCP,   8, 
+        PCLP,   8, 
+        PL1P,   16, 
+        PL1A,   32, 
+        PL1B,   8, 
+        PEPL,   16, 
+        PRPL,   16, 
+        PCIT,   8, 
+        PLTP,   16, 
+        PLTD,   32, 
+        PED2,   16, 
+        PRDC,   16, 
+        PED1,   16, 
         PCHP,   16
     }
 
@@ -6918,51 +6918,51 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         OperationRegion (LPC, PCI_Config, Zero, 0x0100)
         Field (LPC, AnyAcc, NoLock, Preserve)
         {
-            Offset (0x02),
-            CDID,   16,
-            Offset (0x08),
-            CRID,   8,
-            Offset (0x40),
-                ,   7,
-            ACBA,   9,
-            Offset (0x48),
-                ,   7,
-            GPBA,   9,
-            Offset (0x60),
-            PARC,   8,
-            PBRC,   8,
-            PCRC,   8,
-            PDRC,   8,
-            Offset (0x68),
-            PERC,   8,
-            PFRC,   8,
-            PGRC,   8,
-            PHRC,   8,
-            Offset (0x80),
-            IOD0,   8,
-            IOD1,   8,
-            Offset (0xA0),
-                ,   9,
-            PRBL,   1,
-            Offset (0xAC),
-            Offset (0xAD),
-            Offset (0xAE),
-            XUSB,   1,
-            Offset (0xB8),
-                ,   6,
-            GR03,   2,
-            Offset (0xBA),
-            GR08,   2,
-            GR09,   2,
-            GR0A,   2,
-            GR0B,   2,
-            Offset (0xBC),
-                ,   2,
-            GR19,   2,
-            Offset (0xC0),
-            Offset (0xF0),
-            RAEN,   1,
-                ,   13,
+            Offset (0x02), 
+            CDID,   16, 
+            Offset (0x08), 
+            CRID,   8, 
+            Offset (0x40), 
+                ,   7, 
+            ACBA,   9, 
+            Offset (0x48), 
+                ,   7, 
+            GPBA,   9, 
+            Offset (0x60), 
+            PARC,   8, 
+            PBRC,   8, 
+            PCRC,   8, 
+            PDRC,   8, 
+            Offset (0x68), 
+            PERC,   8, 
+            PFRC,   8, 
+            PGRC,   8, 
+            PHRC,   8, 
+            Offset (0x80), 
+            IOD0,   8, 
+            IOD1,   8, 
+            Offset (0xA0), 
+                ,   9, 
+            PRBL,   1, 
+            Offset (0xAC), 
+            Offset (0xAD), 
+            Offset (0xAE), 
+            XUSB,   1, 
+            Offset (0xB8), 
+                ,   6, 
+            GR03,   2, 
+            Offset (0xBA), 
+            GR08,   2, 
+            GR09,   2, 
+            GR0A,   2, 
+            GR0B,   2, 
+            Offset (0xBC), 
+                ,   2, 
+            GR19,   2, 
+            Offset (0xC0), 
+            Offset (0xF0), 
+            RAEN,   1, 
+                ,   13, 
             RCBA,   18
         }
     }
@@ -7392,219 +7392,219 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         OperationRegion (PMIO, SystemIO, PMBS (), 0x80)
         Field (PMIO, ByteAcc, NoLock, Preserve)
         {
-            Offset (0x08),
-            PBSS,   1,
-            Offset (0x28),
-            Offset (0x2A),
-                ,   3,
-            GPE3,   1,
-                ,   7,
-            GPEB,   1,
-            Offset (0x3C),
-                ,   1,
-            UPRW,   1,
-            Offset (0x42),
-                ,   1,
+            Offset (0x08), 
+            PBSS,   1, 
+            Offset (0x28), 
+            Offset (0x2A), 
+                ,   3, 
+            GPE3,   1, 
+                ,   7, 
+            GPEB,   1, 
+            Offset (0x3C), 
+                ,   1, 
+            UPRW,   1, 
+            Offset (0x42), 
+                ,   1, 
             GPEC,   1
         }
 
         Field (PMIO, ByteAcc, NoLock, WriteAsZeros)
         {
-            Offset (0x20),
-            Offset (0x22),
-                ,   3,
-            GPS3,   1,
-                ,   7,
-            GPSB,   1,
-            Offset (0x64),
-                ,   9,
-            SCIS,   1,
+            Offset (0x20), 
+            Offset (0x22), 
+                ,   3, 
+            GPS3,   1, 
+                ,   7, 
+            GPSB,   1, 
+            Offset (0x64), 
+                ,   9, 
+            SCIS,   1, 
             Offset (0x66)
         }
 
         OperationRegion (LGPE, SystemIO, Add (PMBS (), 0x80), 0x20)
         Field (LGPE, ByteAcc, NoLock, Preserve)
         {
-            Offset (0x10),
-            Offset (0x11),
-            GE08,   1,
-                ,   8,
-            GE17,   1,
-                ,   17,
-            GE35,   1,
-                ,   9,
-            GE45,   1,
-            Offset (0x16),
-            GE48,   1,
-                ,   2,
-            GE51,   1,
+            Offset (0x10), 
+            Offset (0x11), 
+            GE08,   1, 
+                ,   8, 
+            GE17,   1, 
+                ,   17, 
+            GE35,   1, 
+                ,   9, 
+            GE45,   1, 
+            Offset (0x16), 
+            GE48,   1, 
+                ,   2, 
+            GE51,   1, 
             Offset (0x20)
         }
 
         Field (LGPE, ByteAcc, NoLock, WriteAsZeros)
         {
-            Offset (0x01),
-            GS08,   1,
-                ,   8,
-            GS17,   1,
-                ,   17,
-            GS35,   1,
-                ,   9,
-            GS45,   1,
-            Offset (0x06),
-            GS48,   1,
-                ,   2,
-            GS51,   1,
-                ,   2,
-            GS54,   1,
-            GS55,   1,
+            Offset (0x01), 
+            GS08,   1, 
+                ,   8, 
+            GS17,   1, 
+                ,   17, 
+            GS35,   1, 
+                ,   9, 
+            GS45,   1, 
+            Offset (0x06), 
+            GS48,   1, 
+                ,   2, 
+            GS51,   1, 
+                ,   2, 
+            GS54,   1, 
+            GS55,   1, 
             Offset (0x10)
         }
 
         OperationRegion (GPR, SystemIO, GPBS (), 0x0400)
         Field (GPR, ByteAcc, NoLock, Preserve)
         {
-            GU00,   8,
-            GU01,   8,
-            GU02,   8,
-            GU03,   8,
-            GIO0,   8,
-            GIO1,   8,
-            GIO2,   8,
-            GIO3,   8,
-            Offset (0x0C),
-            GL00,   8,
-            GL01,   8,
-            GL02,   8,
-            GP24,   1,
-                ,   2,
-            GP27,   1,
-            GP28,   1,
-            Offset (0x10),
-            Offset (0x18),
-            GB00,   8,
-            GB01,   8,
-            GB02,   8,
-            GB03,   8,
-            Offset (0x2C),
-            GIV0,   8,
-            GIV1,   8,
-            GIV2,   8,
-            GIV3,   8,
-            GU04,   8,
-            GU05,   8,
-            GU06,   8,
-            GU07,   8,
-            GIO4,   8,
-            GIO5,   8,
-            GIO6,   8,
-            GIO7,   8,
-            GL04,   8,
-            GL05,   8,
-            GL06,   8,
-            GL07,   8,
-            Offset (0x40),
-            GU08,   8,
-            GU09,   8,
-            GU0A,   8,
-            GU0B,   8,
-            GIO8,   8,
-            GIO9,   8,
-            GIOA,   8,
-            GIOB,   8,
-            GL08,   8,
-            GL09,   8,
-            GL0A,   8,
+            GU00,   8, 
+            GU01,   8, 
+            GU02,   8, 
+            GU03,   8, 
+            GIO0,   8, 
+            GIO1,   8, 
+            GIO2,   8, 
+            GIO3,   8, 
+            Offset (0x0C), 
+            GL00,   8, 
+            GL01,   8, 
+            GL02,   8, 
+            GP24,   1, 
+                ,   2, 
+            GP27,   1, 
+            GP28,   1, 
+            Offset (0x10), 
+            Offset (0x18), 
+            GB00,   8, 
+            GB01,   8, 
+            GB02,   8, 
+            GB03,   8, 
+            Offset (0x2C), 
+            GIV0,   8, 
+            GIV1,   8, 
+            GIV2,   8, 
+            GIV3,   8, 
+            GU04,   8, 
+            GU05,   8, 
+            GU06,   8, 
+            GU07,   8, 
+            GIO4,   8, 
+            GIO5,   8, 
+            GIO6,   8, 
+            GIO7,   8, 
+            GL04,   8, 
+            GL05,   8, 
+            GL06,   8, 
+            GL07,   8, 
+            Offset (0x40), 
+            GU08,   8, 
+            GU09,   8, 
+            GU0A,   8, 
+            GU0B,   8, 
+            GIO8,   8, 
+            GIO9,   8, 
+            GIOA,   8, 
+            GIOB,   8, 
+            GL08,   8, 
+            GL09,   8, 
+            GL0A,   8, 
             GL0B,   8
         }
 
         OperationRegion (GPRL, SystemIO, GPBS (), 0x40)
         Field (GPRL, ByteAcc, NoLock, Preserve)
         {
-            Offset (0x01),
-            GO08,   1,
-            GO09,   1,
-                ,   3,
-            GO13,   1,
-            GO14,   1,
-                ,   2,
-            GO17,   1,
-                ,   27,
-            GO45,   1,
-            Offset (0x06),
-            GO48,   1,
-                ,   2,
-            GO51,   1,
-                ,   2,
-            GO54,   1,
-            GO55,   1,
-            GO56,   1,
-            Offset (0x10),
-            Offset (0x30),
-            GR00,   32,
-            GR01,   32,
+            Offset (0x01), 
+            GO08,   1, 
+            GO09,   1, 
+                ,   3, 
+            GO13,   1, 
+            GO14,   1, 
+                ,   2, 
+            GO17,   1, 
+                ,   27, 
+            GO45,   1, 
+            Offset (0x06), 
+            GO48,   1, 
+                ,   2, 
+            GO51,   1, 
+                ,   2, 
+            GO54,   1, 
+            GO55,   1, 
+            GO56,   1, 
+            Offset (0x10), 
+            Offset (0x30), 
+            GR00,   32, 
+            GR01,   32, 
             GR02,   32
         }
 
         OperationRegion (RCRB, SystemMemory, RCBS (), 0x4000)
         Field (RCRB, DWordAcc, Lock, Preserve)
         {
-            Offset (0x1000),
-            Offset (0x2330),
-            AFEA,   32,
-            AFED,   32,
-            AFES,   16,
-            AFER,   16,
-            Offset (0x3000),
-            Offset (0x3310),
-                ,   4,
-            PWST,   1,
-            Offset (0x3318),
-                ,   4,
-            WLPE,   1,
-            Offset (0x331C),
-            Offset (0x331F),
-            PMFS,   1,
-            Offset (0x3320),
-            CKEN,   32,
-            Offset (0x33E0),
-            Offset (0x33E2),
-            WLP2,   2,
-            Offset (0x3404),
-            HPAS,   2,
-                ,   5,
-            HPAE,   1,
-            Offset (0x3418),
-                ,   1,
-            ADSD,   1,
-            SATD,   1,
-            SMBD,   1,
-            HDAD,   1,
-            Offset (0x341A),
-            RP1D,   1,
-            RP2D,   1,
-            RP3D,   1,
-            RP4D,   1,
-            RP5D,   1,
-            RP6D,   1,
-            RP7D,   1,
-            RP8D,   1,
-            Offset (0x359C),
-            UP0D,   1,
-            UP1D,   1,
-            UP2D,   1,
-            UP3D,   1,
-            UP4D,   1,
-            UP5D,   1,
-            UP6D,   1,
-            UP7D,   1,
-            UP8D,   1,
-            UP9D,   1,
-            UPAD,   1,
-            UPBD,   1,
-            UPCD,   1,
-            UPDD,   1,
-                ,   1,
+            Offset (0x1000), 
+            Offset (0x2330), 
+            AFEA,   32, 
+            AFED,   32, 
+            AFES,   16, 
+            AFER,   16, 
+            Offset (0x3000), 
+            Offset (0x3310), 
+                ,   4, 
+            PWST,   1, 
+            Offset (0x3318), 
+                ,   4, 
+            WLPE,   1, 
+            Offset (0x331C), 
+            Offset (0x331F), 
+            PMFS,   1, 
+            Offset (0x3320), 
+            CKEN,   32, 
+            Offset (0x33E0), 
+            Offset (0x33E2), 
+            WLP2,   2, 
+            Offset (0x3404), 
+            HPAS,   2, 
+                ,   5, 
+            HPAE,   1, 
+            Offset (0x3418), 
+                ,   1, 
+            ADSD,   1, 
+            SATD,   1, 
+            SMBD,   1, 
+            HDAD,   1, 
+            Offset (0x341A), 
+            RP1D,   1, 
+            RP2D,   1, 
+            RP3D,   1, 
+            RP4D,   1, 
+            RP5D,   1, 
+            RP6D,   1, 
+            RP7D,   1, 
+            RP8D,   1, 
+            Offset (0x359C), 
+            UP0D,   1, 
+            UP1D,   1, 
+            UP2D,   1, 
+            UP3D,   1, 
+            UP4D,   1, 
+            UP5D,   1, 
+            UP6D,   1, 
+            UP7D,   1, 
+            UP8D,   1, 
+            UP9D,   1, 
+            UPAD,   1, 
+            UPBD,   1, 
+            UPCD,   1, 
+            UPDD,   1, 
+                ,   1, 
             Offset (0x359E)
         }
     }
@@ -7619,7 +7619,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (LGPI, SystemIO, Local0, 0x04)
                 Field (LGPI, AnyAcc, NoLock, Preserve)
                 {
-                        ,   30,
+                        ,   30, 
                     TEMP,   1
                 }
 
@@ -7637,7 +7637,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (LGPI, SystemIO, Local0, 0x04)
                 Field (LGPI, AnyAcc, NoLock, Preserve)
                 {
-                        ,   31,
+                        ,   31, 
                     TEMP,   1
                 }
 
@@ -7655,7 +7655,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (LGPI, SystemIO, Local0, 0x04)
                 Field (LGPI, AnyAcc, NoLock, Preserve)
                 {
-                        ,   31,
+                        ,   31, 
                     TEMP,   1
                 }
 
@@ -7671,7 +7671,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (LGPI, SystemIO, Local0, 0x04)
                 Field (LGPI, ByteAcc, NoLock, Preserve)
                 {
-                        ,   3,
+                        ,   3, 
                     TEMP,   1
                 }
 
@@ -7717,7 +7717,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (LGP2, SystemIO, Local0, 0x04)
                 Field (LGP2, AnyAcc, NoLock, Preserve)
                 {
-                    GPWP,   2,
+                    GPWP,   2, 
                     GPIS,   1
                 }
 
@@ -7813,11 +7813,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (GLBA, PCI_Config, Zero, 0x0100)
             Field (GLBA, AnyAcc, NoLock, Preserve)
             {
-                DVID,   16,
-                Offset (0xCC),
-                Offset (0xCD),
-                PMEE,   1,
-                    ,   6,
+                DVID,   16, 
+                Offset (0xCC), 
+                Offset (0xCD), 
+                PMEE,   1, 
+                    ,   6, 
                 PMES,   1
             }
 
@@ -7854,11 +7854,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (PWKE, PCI_Config, Zero, 0x0100)
             Field (PWKE, AnyAcc, NoLock, Preserve)
             {
-                DVID,   16,
-                Offset (0x54),
-                Offset (0x55),
-                PMEE,   1,
-                    ,   6,
+                DVID,   16, 
+                Offset (0x54), 
+                Offset (0x55), 
+                PMEE,   1, 
+                    ,   6, 
                 PMES,   1
             }
 
@@ -7902,9 +7902,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Name (UPCA, Package (0x04)
                         {
-                            0xFF,
-                            Zero,
-                            Zero,
+                            0xFF, 
+                            Zero, 
+                            Zero, 
                             Zero
                         })
                         Return (UPCA)
@@ -7917,7 +7917,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                             Buffer (0x10)
                             {
                                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                             }
                         })
                         Return (PLDP)
@@ -7956,14 +7956,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8009,14 +8009,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8062,14 +8062,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8115,14 +8115,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8188,11 +8188,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (PWKE, PCI_Config, Zero, 0x0100)
             Field (PWKE, AnyAcc, NoLock, Preserve)
             {
-                DVID,   16,
-                Offset (0x54),
-                Offset (0x55),
-                PMEE,   1,
-                    ,   6,
+                DVID,   16, 
+                Offset (0x54), 
+                Offset (0x55), 
+                PMEE,   1, 
+                    ,   6, 
                 PMES,   1
             }
 
@@ -8236,9 +8236,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Name (UPCA, Package (0x04)
                         {
-                            0xFF,
-                            Zero,
-                            Zero,
+                            0xFF, 
+                            Zero, 
+                            Zero, 
                             Zero
                         })
                         Return (UPCA)
@@ -8251,7 +8251,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                             Buffer (0x10)
                             {
                                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                                /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                             }
                         })
                         Return (PLDP)
@@ -8280,14 +8280,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8333,14 +8333,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x07
+                                                 0x07                                           
                                             })
                                         }
                                         Else
                                         {
                                             Return (Buffer (One)
                                             {
-                                                 0x00
+                                                 0x00                                           
                                             })
                                         }
                                     }
@@ -8419,34 +8419,34 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (XPRT, PCI_Config, Zero, 0x0100)
             Field (XPRT, AnyAcc, NoLock, Preserve)
             {
-                DVID,   16,
-                Offset (0x40),
-                    ,   11,
-                SWAI,   1,
-                Offset (0x44),
-                    ,   12,
-                SAIP,   2,
-                Offset (0x48),
-                Offset (0x74),
-                D0D3,   2,
-                Offset (0x75),
-                PMEE,   1,
-                    ,   6,
-                PMES,   1,
-                Offset (0xA8),
-                    ,   13,
-                MW13,   1,
-                MW14,   1,
-                Offset (0xAC),
-                Offset (0xB0),
-                    ,   13,
-                MB13,   1,
-                MB14,   1,
-                Offset (0xB4),
-                Offset (0xD0),
-                PR2,    32,
-                PR2M,   32,
-                PR3,    32,
+                DVID,   16, 
+                Offset (0x40), 
+                    ,   11, 
+                SWAI,   1, 
+                Offset (0x44), 
+                    ,   12, 
+                SAIP,   2, 
+                Offset (0x48), 
+                Offset (0x74), 
+                D0D3,   2, 
+                Offset (0x75), 
+                PMEE,   1, 
+                    ,   6, 
+                PMES,   1, 
+                Offset (0xA8), 
+                    ,   13, 
+                MW13,   1, 
+                MW14,   1, 
+                Offset (0xAC), 
+                Offset (0xB0), 
+                    ,   13, 
+                MB13,   1, 
+                MB14,   1, 
+                Offset (0xB4), 
+                Offset (0xD0), 
+                PR2,    32, 
+                PR2M,   32, 
+                PR3,    32, 
                 PR3M,   32
             }
 
@@ -8479,9 +8479,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (XHCP, SystemMemory, Add (GPCB (), 0x000A0000), 0x0100)
             Field (XHCP, AnyAcc, Lock, Preserve)
             {
-                Offset (0x04),
-                PDBM,   16,
-                Offset (0x10),
+                Offset (0x04), 
+                PDBM,   16, 
+                Offset (0x10), 
                 MEMB,   64
             }
 
@@ -8681,7 +8681,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 If (LEqual (DVID, 0xFFFF))
                 {
-
+                    
                 }
 
                 Store (MEMB, Local2)
@@ -8694,16 +8694,16 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (MCA1, SystemMemory, SRMB, 0x9000)
                 Field (MCA1, DWordAcc, Lock, Preserve)
                 {
-                    Offset (0x80E0),
-                        ,   15,
-                    AX15,   1,
-                    Offset (0x8154),
-                        ,   31,
-                    CLK2,   1,
-                    Offset (0x816C),
-                        ,   2,
-                    CLK0,   1,
-                        ,   11,
+                    Offset (0x80E0), 
+                        ,   15, 
+                    AX15,   1, 
+                    Offset (0x8154), 
+                        ,   31, 
+                    CLK2,   1, 
+                    Offset (0x816C), 
+                        ,   2, 
+                    CLK0,   1, 
+                        ,   11, 
                     CLK1,   1
                 }
 
@@ -8746,12 +8746,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     OperationRegion (PSCA, SystemMemory, Local3, 0x40)
                     Field (PSCA, DWordAcc, Lock, Preserve)
                     {
-                        PSC1,   32,
-                        Offset (0x10),
-                        PSC2,   32,
-                        Offset (0x20),
-                        PSC3,   32,
-                        Offset (0x30),
+                        PSC1,   32, 
+                        Offset (0x10), 
+                        PSC2,   32, 
+                        Offset (0x20), 
+                        PSC3,   32, 
+                        Offset (0x30), 
                         PSC4,   32
                     }
 
@@ -8850,16 +8850,16 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (MCA1, SystemMemory, SRMB, 0x9000)
                 Field (MCA1, DWordAcc, Lock, Preserve)
                 {
-                    Offset (0x80E0),
-                        ,   15,
-                    AX15,   1,
-                    Offset (0x8154),
-                        ,   31,
-                    CLK2,   1,
-                    Offset (0x816C),
-                        ,   2,
-                    CLK0,   1,
-                        ,   11,
+                    Offset (0x80E0), 
+                        ,   15, 
+                    AX15,   1, 
+                    Offset (0x8154), 
+                        ,   31, 
+                    CLK2,   1, 
+                    Offset (0x816C), 
+                        ,   2, 
+                    CLK0,   1, 
+                        ,   11, 
                     CLK1,   1
                 }
 
@@ -8996,7 +8996,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     If (LEqual (DVID, 0xFFFF))
                     {
-
+                        
                     }
 
                     If (CondRefOf (\_SB.PCI0.XHC.RHUB.PS0X))
@@ -9266,8 +9266,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (PKG, Package (0x03)
             {
-                Zero,
-                Zero,
+                Zero, 
+                Zero, 
                 Zero
             })
             Store (Arg0, Index (PKG, Zero))
@@ -10697,7 +10697,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                     }
@@ -10711,7 +10711,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -10812,7 +10812,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                     }
@@ -10826,7 +10826,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -10896,7 +10896,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                     }
@@ -10910,7 +10910,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -10948,7 +10948,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Package (0x02)
                 {
-                    0x0E,
+                    0x0E, 
                     0x04
                 })
             }
@@ -10993,14 +10993,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11014,7 +11014,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11069,14 +11069,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11090,7 +11090,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11182,14 +11182,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11203,7 +11203,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11266,14 +11266,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11287,7 +11287,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11366,14 +11366,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11387,7 +11387,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11450,14 +11450,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11471,7 +11471,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11535,14 +11535,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11556,7 +11556,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11620,14 +11620,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11641,7 +11641,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11705,14 +11705,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11726,7 +11726,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11802,14 +11802,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11823,7 +11823,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -11880,14 +11880,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Package (0x02)
                     {
-                        0x0D,
+                        0x0D, 
                         0x03
                     })
                 }
 
                 Return (Package (0x02)
                 {
-                    Zero,
+                    Zero, 
                     Zero
                 })
             }
@@ -11947,14 +11947,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -11968,7 +11968,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
                 Return (Zero)
@@ -12025,14 +12025,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Package (0x02)
                     {
-                        0x0D,
+                        0x0D, 
                         0x03
                     })
                 }
 
                 Return (Package (0x02)
                 {
-                    Zero,
+                    Zero, 
                     Zero
                 })
             }
@@ -12424,17 +12424,17 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (HDAR, PCI_Config, Zero, 0x0100)
             Field (HDAR, AnyAcc, NoLock, Preserve)
             {
-                DVID,   16,
-                Offset (0x4C),
-                DCKA,   1,
-                Offset (0x4D),
-                DCKM,   1,
-                    ,   6,
-                DCKS,   1,
-                Offset (0x54),
-                Offset (0x55),
-                PMEE,   1,
-                    ,   6,
+                DVID,   16, 
+                Offset (0x4C), 
+                DCKA,   1, 
+                Offset (0x4D), 
+                DCKM,   1, 
+                    ,   6, 
+                DCKS,   1, 
+                Offset (0x54), 
+                Offset (0x55), 
+                PMEE,   1, 
+                    ,   6, 
                 PMES,   1
             }
 
@@ -12516,67 +12516,67 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Package (0x02)
                 {
-                    "CodecId",
+                    "CodecId", 
                     "UNKNOWN"
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "DevPort",
+                    "DevPort", 
                     "PORT0"
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "MCLK",
+                    "MCLK", 
                     Zero
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "BCLK",
+                    "BCLK", 
                     0x00BB8000
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "Master",
+                    "Master", 
                     Zero
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "Format",
+                    "Format", 
                     "I2S"
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "Rate",
+                    "Rate", 
                     0xBB80
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "Channels",
+                    "Channels", 
                     0x02
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "Bits",
+                    "Bits", 
                     0x18
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "FrameSize",
+                    "FrameSize", 
                     0x40
-                },
+                }, 
 
                 Package (0x02)
                 {
-                    "SlotMask",
+                    "SlotMask", 
                     0x0C
                 }
             })
@@ -12680,7 +12680,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 OperationRegion (EPAC, SystemMemory, Add (GPCB (), 0x000FA308), 0x08)
                 Field (EPAC, DWordAcc, Lock, Preserve)
                 {
-                    CAIR,   32,
+                    CAIR,   32, 
                     CADR,   32
                 }
 
@@ -12788,7 +12788,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     If (LEqual (PCIT, Zero))
                     {
-
+                        
                     }
 
                     Store (RDCA (Zero, 0x04, Zero, Zero, 0x02), PCMD)
@@ -12812,7 +12812,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     If (LEqual (PCIT, Zero))
                     {
-
+                        
                     }
 
                     RPD0 ()
@@ -12839,7 +12839,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             }
         }
 
-
+        
 
         Device (SBUS)
         {
@@ -12847,30 +12847,30 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             OperationRegion (SMBP, PCI_Config, 0x40, 0xC0)
             Field (SMBP, DWordAcc, NoLock, Preserve)
             {
-                    ,   2,
+                    ,   2, 
                 I2CE,   1
             }
 
             OperationRegion (SMPB, PCI_Config, 0x20, 0x04)
             Field (SMPB, DWordAcc, NoLock, Preserve)
             {
-                    ,   5,
+                    ,   5, 
                 SBAR,   11
             }
 
             OperationRegion (SMBI, SystemIO, ShiftLeft (SBAR, 0x05), 0x10)
             Field (SMBI, ByteAcc, NoLock, Preserve)
             {
-                HSTS,   8,
-                Offset (0x02),
-                HCON,   8,
-                HCOM,   8,
-                TXSA,   8,
-                DAT0,   8,
-                DAT1,   8,
-                HBDR,   8,
-                PECR,   8,
-                RXSA,   8,
+                HSTS,   8, 
+                Offset (0x02), 
+                HCON,   8, 
+                HCOM,   8, 
+                TXSA,   8, 
+                DAT0,   8, 
+                DAT1,   8, 
+                HBDR,   8, 
+                PECR,   8, 
+                RXSA,   8, 
                 SDAT,   16
             }
 
@@ -13201,22 +13201,22 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         OperationRegion (CPSB, SystemMemory, 0xDCC77E98, 0x10)
         Field (CPSB, AnyAcc, NoLock, Preserve)
         {
-            RTCX,   1,
-            SBB0,   7,
-            SBB1,   8,
-            SBB2,   8,
-            SBB3,   8,
-            SBB4,   8,
-            SBB5,   8,
-            SBB6,   8,
-            SBB7,   8,
-            SBB8,   8,
-            SBB9,   8,
-            SBBA,   8,
-            SBBB,   8,
-            SBBC,   8,
-            SBBD,   8,
-            SBBE,   8,
+            RTCX,   1, 
+            SBB0,   7, 
+            SBB1,   8, 
+            SBB2,   8, 
+            SBB3,   8, 
+            SBB4,   8, 
+            SBB5,   8, 
+            SBB6,   8, 
+            SBB7,   8, 
+            SBB8,   8, 
+            SBB9,   8, 
+            SBBA,   8, 
+            SBBB,   8, 
+            SBBC,   8, 
+            SBBD,   8, 
+            SBBE,   8, 
             SBBF,   8
         }
 
@@ -13247,23 +13247,23 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         OperationRegion (SMIE, SystemIO, PMBA, 0x04)
         Field (SMIE, ByteAcc, NoLock, Preserve)
         {
-                ,   10,
-            RTCS,   1,
-                ,   3,
-            PEXS,   1,
-            WAKS,   1,
-            Offset (0x03),
-            PWBT,   1,
+                ,   10, 
+            RTCS,   1, 
+                ,   3, 
+            PEXS,   1, 
+            WAKS,   1, 
+            Offset (0x03), 
+            PWBT,   1, 
             Offset (0x04)
         }
 
         OperationRegion (SLPR, SystemIO, SMCR, 0x08)
         Field (SLPR, ByteAcc, NoLock, Preserve)
         {
-                ,   4,
-            SLPE,   1,
-                ,   31,
-            SLPX,   1,
+                ,   4, 
+            SLPE,   1, 
+                ,   31, 
+            SLPX,   1, 
             Offset (0x08)
         }
     }
@@ -13399,25 +13399,25 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     OperationRegion (_SB.PCI0.LPCB.LPCR, PCI_Config, 0x80, 0x04)
     Field (\_SB.PCI0.LPCB.LPCR, ByteAcc, NoLock, Preserve)
     {
-        CARN,   3,
-            ,   1,
-        CBDR,   3,
-        Offset (0x01),
-        LTDR,   2,
-            ,   2,
-        FDDR,   1,
-        Offset (0x02),
-        CALE,   1,
-        CBLE,   1,
-        LTLE,   1,
-        FDLE,   1,
-        Offset (0x03),
-        GLLE,   1,
-        GHLE,   1,
-        KCLE,   1,
-        MCLE,   1,
-        C1LE,   1,
-        C2LE,   1,
+        CARN,   3, 
+            ,   1, 
+        CBDR,   3, 
+        Offset (0x01), 
+        LTDR,   2, 
+            ,   2, 
+        FDDR,   1, 
+        Offset (0x02), 
+        CALE,   1, 
+        CBLE,   1, 
+        LTLE,   1, 
+        FDLE,   1, 
+        Offset (0x03), 
+        GLLE,   1, 
+        GHLE,   1, 
+        KCLE,   1, 
+        MCLE,   1, 
+        C1LE,   1, 
+        C2LE,   1, 
         Offset (0x04)
     }
 
@@ -13764,7 +13764,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
             Name (PURX, Package (0x02)
             {
-                One,
+                One, 
                 Zero
             })
             Method (_PUR, 0, NotSerialized)  // _PUR: Processor Utilization Request
@@ -13860,7 +13860,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                             {
                                 Return (Buffer (One)
                                 {
-                                     0x07
+                                     0x07                                           
                                 })
                             }
                             ElseIf (LEqual (T_0, One))
@@ -14265,7 +14265,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
         Return (Package (0x02)
         {
-            Zero,
+            Zero, 
             Zero
         })
     }
@@ -14393,11 +14393,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     OperationRegion (MBAR, SystemMemory, Add (\_SB.PCI0.GMHB (), 0x5000), 0x1000)
     Field (MBAR, ByteAcc, NoLock, Preserve)
     {
-        Offset (0x938),
-        PWRU,   4,
-        Offset (0x9A0),
-        PPL1,   15,
-        PL1E,   1,
+        Offset (0x938), 
+        PWRU,   4, 
+        Offset (0x9A0), 
+        PPL1,   15, 
+        PL1E,   1, 
         CLP1,   1
     }
 
@@ -14682,7 +14682,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         Name (PICM, Zero)
         Name (PRWP, Package (0x02)
         {
-            Zero,
+            Zero, 
             Zero
         })
         Method (GPRW, 2, NotSerialized)
@@ -15242,14 +15242,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15286,14 +15286,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15315,7 +15315,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15335,14 +15335,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15379,14 +15379,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15408,7 +15408,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15428,14 +15428,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15472,14 +15472,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15501,7 +15501,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15521,14 +15521,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15565,14 +15565,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15594,7 +15594,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15614,14 +15614,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15658,14 +15658,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15687,7 +15687,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15707,14 +15707,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15751,14 +15751,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15780,7 +15780,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15800,14 +15800,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15844,14 +15844,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15873,7 +15873,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15893,14 +15893,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
                     {
                         Return (Buffer (One)
                         {
-                             0x00
+                             0x00                                           
                         })
                     }
                 }
@@ -15937,14 +15937,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x07
+                                 0x07                                           
                             })
                         }
                         Else
                         {
                             Return (Buffer (One)
                             {
-                                 0x00
+                                 0x00                                           
                             })
                         }
                     }
@@ -15966,7 +15966,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -15980,10 +15980,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Package (0x05)
                 {
-                    "DockOemId",
-                    "DockSkuId",
-                    Zero,
-                    0x02,
+                    "DockOemId", 
+                    "DockSkuId", 
+                    Zero, 
+                    0x02, 
                     0x02
                 }
             })
@@ -15993,7 +15993,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Return (Package (0x02)
             {
-                "PcOemId",
+                "PcOemId", 
                 "PcSkuId"
             })
         }
@@ -16091,7 +16091,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     Else
@@ -16133,7 +16133,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Return (Buffer (One)
                 {
-                     0x00
+                     0x00                                           
                 })
             }
         }
@@ -16157,14 +16157,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (PIB1, Buffer (0x07)
                 {
-                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF
+                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF       
                 })
                 Return (PIB1)
             }
 
             Name (PIB2, Buffer (0x07)
             {
-                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       
             })
             Return (PIB2)
         }
@@ -16209,14 +16209,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (PIB1, Buffer (0x07)
                 {
-                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF
+                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF       
                 })
                 Return (PIB1)
             }
 
             Name (PIB2, Buffer (0x07)
             {
-                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       
             })
             Return (PIB2)
         }
@@ -16261,14 +16261,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (PIB1, Buffer (0x07)
                 {
-                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF
+                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF       
                 })
                 Return (PIB1)
             }
 
             Name (PIB2, Buffer (0x07)
             {
-                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       
             })
             Return (PIB2)
         }
@@ -16292,14 +16292,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (PIB1, Buffer (0x07)
                 {
-                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF
+                     0x10, 0x09, 0x00, 0x00, 0x00, 0xB0, 0xEF       
                 })
                 Return (PIB1)
             }
 
             Name (PIB2, Buffer (0x07)
             {
-                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       
             })
             Return (PIB2)
         }
@@ -16321,7 +16321,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03
+                                 0x03                                           
                             })
                         }
                         Else
@@ -16363,7 +16363,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     Return (Buffer (One)
                     {
-                         0x00
+                         0x00                                           
                     })
                 }
             }
@@ -16374,30 +16374,30 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     {
         Name (UPCN, Package (0x04)
         {
-            Zero,
-            Zero,
-            Zero,
+            Zero, 
+            Zero, 
+            Zero, 
             Zero
         })
         Name (UPC3, Package (0x04)
         {
-            0xFF,
-            0x03,
-            Zero,
+            0xFF, 
+            0x03, 
+            Zero, 
             Zero
         })
         Name (UPC2, Package (0x04)
         {
-            0xFF,
-            Zero,
-            Zero,
+            0xFF, 
+            Zero, 
+            Zero, 
             Zero
         })
         Name (UPCP, Package (0x04)
         {
-            0xFF,
-            0xFF,
-            Zero,
+            0xFF, 
+            0xFF, 
+            Zero, 
             Zero
         })
         Name (PLDN, Package (0x01)
@@ -16405,7 +16405,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDV, Package (0x01)
@@ -16413,7 +16413,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDR, Package (0x01)
@@ -16421,7 +16421,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD1, Package (0x01)
@@ -16429,7 +16429,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x69, 0x0C, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x69, 0x0C, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD2, Package (0x01)
@@ -16437,7 +16437,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x69, 0x0C, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x69, 0x0C, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD3, Package (0x01)
@@ -16445,7 +16445,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD4, Package (0x01)
@@ -16453,7 +16453,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD5, Package (0x01)
@@ -16461,7 +16461,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x02, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x02, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD6, Package (0x01)
@@ -16469,7 +16469,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x69, 0x0C, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x69, 0x0C, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD7, Package (0x01)
@@ -16477,7 +16477,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x03, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x03, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD8, Package (0x01)
@@ -16485,7 +16485,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLD9, Package (0x01)
@@ -16493,7 +16493,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x04, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x04, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDA, Package (0x01)
@@ -16501,7 +16501,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x05, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x05, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDB, Package (0x01)
@@ -16509,7 +16509,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x31, 0x1C, 0x80, 0x05, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x31, 0x1C, 0x80, 0x05, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDC, Package (0x01)
@@ -16517,7 +16517,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x31, 0x1C, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x31, 0x1C, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDD, Package (0x01)
@@ -16525,7 +16525,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x31, 0x1C, 0x80, 0x06, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x31, 0x1C, 0x80, 0x06, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDE, Package (0x01)
@@ -16533,7 +16533,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x31, 0x1C, 0x00, 0x07, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x31, 0x1C, 0x00, 0x07, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLDF, Package (0x01)
@@ -16541,7 +16541,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x30, 0x1C, 0x80, 0x07, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x30, 0x1C, 0x80, 0x07, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG1, Package (0x01)
@@ -16549,7 +16549,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG2, Package (0x01)
@@ -16557,7 +16557,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x41, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x41, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG3, Package (0x01)
@@ -16565,7 +16565,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x42, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x42, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG4, Package (0x01)
@@ -16573,7 +16573,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x42, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x42, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG5, Package (0x01)
@@ -16581,7 +16581,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x43, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x43, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG6, Package (0x01)
@@ -16589,7 +16589,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x43, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x43, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG7, Package (0x01)
@@ -16597,7 +16597,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x44, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x44, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLG8, Package (0x01)
@@ -16605,7 +16605,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x44, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x44, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH1, Package (0x01)
@@ -16613,7 +16613,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x45, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x45, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH2, Package (0x01)
@@ -16621,7 +16621,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x45, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x45, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH3, Package (0x01)
@@ -16629,7 +16629,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x46, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x46, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH4, Package (0x01)
@@ -16637,7 +16637,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x46, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x46, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH5, Package (0x01)
@@ -16645,7 +16645,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x47, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x47, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH6, Package (0x01)
@@ -16653,7 +16653,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x47, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x47, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH7, Package (0x01)
@@ -16661,7 +16661,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLH8, Package (0x01)
@@ -16669,7 +16669,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x48, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x48, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ1, Package (0x01)
@@ -16677,7 +16677,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x49, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x49, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ2, Package (0x01)
@@ -16685,7 +16685,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x49, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x49, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ3, Package (0x01)
@@ -16693,7 +16693,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x4A, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x4A, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ4, Package (0x01)
@@ -16701,7 +16701,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x4A, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x4A, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ5, Package (0x01)
@@ -16709,7 +16709,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x4B, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x4B, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ6, Package (0x01)
@@ -16717,7 +16717,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x4B, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x4B, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ7, Package (0x01)
@@ -16725,7 +16725,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x00, 0x4C, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x00, 0x4C, 0x00, 0x00, 0x00, 0x00 
             }
         })
         Name (PLJ8, Package (0x01)
@@ -16733,7 +16733,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             Buffer (0x10)
             {
                 /* 0000 */  0x01, 0xC6, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00,
-                /* 0008 */  0x71, 0x0C, 0x80, 0x4C, 0x00, 0x00, 0x00, 0x00
+                /* 0008 */  0x71, 0x0C, 0x80, 0x4C, 0x00, 0x00, 0x00, 0x00 
             }
         })
     }
@@ -17300,9 +17300,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17315,7 +17315,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17328,9 +17328,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17343,7 +17343,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17356,9 +17356,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17371,7 +17371,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             CreateBitField (DerefOf (Index (PLDP, Zero)), 0x40, VIS)
@@ -17390,9 +17390,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17405,7 +17405,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17418,9 +17418,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17433,7 +17433,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17446,9 +17446,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17461,7 +17461,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17474,9 +17474,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17489,7 +17489,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17502,9 +17502,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17517,7 +17517,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17530,9 +17530,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17545,7 +17545,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17558,9 +17558,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17573,7 +17573,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17586,9 +17586,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17601,7 +17601,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17614,9 +17614,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17629,7 +17629,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xE1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xE1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17642,9 +17642,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17657,7 +17657,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17670,9 +17670,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         {
             Name (UPCP, Package (0x04)
             {
-                0xFF,
-                0xFF,
-                Zero,
+                0xFF, 
+                0xFF, 
+                Zero, 
                 Zero
             })
             Return (UPCP)
@@ -17685,7 +17685,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Buffer (0x10)
                 {
                     /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0008 */  0xB1, 0x1E, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Return (PLDP)
@@ -17703,23 +17703,23 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x02, 0x00, 0x02, 0x00,
                     /* 0008 */  0xA0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0010 */  0x05, 0x00, 0x41, 0x00
-                },
+                    /* 0010 */  0x05, 0x00, 0x41, 0x00                         
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8D, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0x00, 0x00, 0x00, 0x00, 0xCE, 0xFF, 0x56, 0xFF,
-                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-                },
+                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8E, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0x52, 0xE1, 0xAE, 0x1E, 0x00, 0x00, 0x00, 0x00,
-                    /* 0018 */  0x50, 0x00, 0x20, 0x4E, 0x00, 0x00, 0x00, 0x00
+                    /* 0018 */  0x50, 0x00, 0x20, 0x4E, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -17744,15 +17744,15 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x02, 0x00, 0x02, 0x00,
                     /* 0008 */  0xA0, 0x02, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0010 */  0x05, 0x00, 0xA5, 0x00
-                },
+                    /* 0010 */  0x05, 0x00, 0xA5, 0x00                         
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8D, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0x00, 0x00, 0x00, 0x00, 0x32, 0x00, 0x56, 0xFF,
-                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -17777,23 +17777,23 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x02, 0x00, 0x02, 0x00,
                     /* 0008 */  0x28, 0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0010 */  0x59, 0x01, 0x73, 0x00
-                },
+                    /* 0010 */  0x59, 0x01, 0x73, 0x00                         
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8D, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xAA, 0x00,
-                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-                },
+                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8E, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0xAE, 0x1E, 0x52, 0xE1, 0x00, 0x00, 0x00, 0x00,
-                    /* 0018 */  0x50, 0x00, 0x20, 0x4E, 0x00, 0x00, 0x00, 0x00
+                    /* 0018 */  0x50, 0x00, 0x20, 0x4E, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -17818,15 +17818,15 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 {
                     /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x02, 0x00, 0x02, 0x00,
                     /* 0008 */  0xA8, 0x81, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00,
-                    /* 0010 */  0x05, 0x00, 0x73, 0x00
-                },
+                    /* 0010 */  0x05, 0x00, 0x73, 0x00                         
+                }, 
 
                 Buffer (0x20)
                 {
                     /* 0000 */  0x8D, 0x33, 0x54, 0x84, 0x9E, 0x12, 0x52, 0x40,
                     /* 0008 */  0x8C, 0x21, 0x37, 0x5C, 0x01, 0x2B, 0x3A, 0xB7,
                     /* 0010 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x56, 0xFF,
-                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+                    /* 0018 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
                 }
             })
             Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -17887,12 +17887,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
         OperationRegion (TMMB, SystemMemory, 0xFED40000, 0x5000)
         Field (TMMB, ByteAcc, Lock, Preserve)
         {
-            ACCS,   8,
-            Offset (0x18),
-            TSTA,   8,
-            TBCA,   8,
-            Offset (0xF00),
-            TVID,   16,
+            ACCS,   8, 
+            Offset (0x18), 
+            TSTA,   8, 
+            TBCA,   8, 
+            Offset (0xF00), 
+            TVID,   16, 
             TDID,   16
         }
 
@@ -17934,7 +17934,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (0x02)
                         {
-                             0xFF, 0x01
+                             0xFF, 0x01                                     
                         })
                     }
                     ElseIf (LEqual (T_0, One))
@@ -17970,7 +17970,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Name (PPI1, Package (0x02)
                         {
-                            Zero,
+                            Zero, 
                             Zero
                         })
                         Store (0x11, DAT)
@@ -17991,8 +17991,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Name (PPI2, Package (0x03)
                         {
-                            Zero,
-                            Zero,
+                            Zero, 
+                            Zero, 
                             Zero
                         })
                         Store (0x21, DAT)
@@ -18092,7 +18092,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     {
                         Return (Buffer (One)
                         {
-                             0x03
+                             0x03                                           
                         })
                     }
                     ElseIf (LEqual (T_1, One))
@@ -18125,7 +18125,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
             Return (Buffer (One)
             {
-                 0x00
+                 0x00                                           
             })
         }
     }
@@ -18210,11 +18210,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Field (GNVS, AnyAcc, Lock, Preserve)
                 {
-                    Offset (0x1E),
-                    BNUM,   8,
-                    Offset (0x20),
-                    B1SC,   8,
-                    Offset (0x23),
+                    Offset (0x1E), 
+                    BNUM,   8, 
+                    Offset (0x20), 
+                    B1SC,   8, 
+                    Offset (0x23), 
                     B1SS,   8
                 }
             }
@@ -18233,9 +18233,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Field (GNVS, AnyAcc, Lock, Preserve)
                 {
-                    Offset (0x21),
-                    B2SC,   8,
-                    Offset (0x24),
+                    Offset (0x21), 
+                    B2SC,   8, 
+                    Offset (0x24), 
                     B2SS,   8
                 }
             }
@@ -18277,18 +18277,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
 
     Name (_S0, Package (0x04)  // _S0_: S0 System State
     {
-        Zero,
-        Zero,
-        Zero,
+        Zero, 
+        Zero, 
+        Zero, 
         Zero
     })
     If (SS1)
     {
         Name (_S1, Package (0x04)  // _S1_: S1 System State
         {
-            One,
-            Zero,
-            Zero,
+            One, 
+            Zero, 
+            Zero, 
             Zero
         })
     }
@@ -18297,9 +18297,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     {
         Name (_S3, Package (0x04)  // _S3_: S3 System State
         {
-            0x05,
-            Zero,
-            Zero,
+            0x05, 
+            Zero, 
+            Zero, 
             Zero
         })
     }
@@ -18308,18 +18308,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
     {
         Name (_S4, Package (0x04)  // _S4_: S4 System State
         {
-            0x06,
-            Zero,
-            Zero,
+            0x06, 
+            Zero, 
+            Zero, 
             Zero
         })
     }
 
     Name (_S5, Package (0x04)  // _S5_: S5 System State
     {
-        0x07,
-        Zero,
-        Zero,
+        0x07, 
+        Zero, 
+        Zero, 
         Zero
     })
     Method (PTS, 1, NotSerialized)
