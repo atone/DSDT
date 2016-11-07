@@ -6740,6 +6740,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
             {
                 Name (_ADR, Zero)
             }
+            Device (MEI)
+            {
+                Name (_ADR, 0x00160000)
+                Method (_DSM, 4, NotSerialized)
+                {
+                    Store (Package (0x02) {
+                        "layout-id", Buffer(0x04) {0x3a,0x8c,0x00,0x00},
+                    }, Local0)
+                    DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                    Return (Local0)
+                }
+            }
         }
 
         Scope (\_GPE)
