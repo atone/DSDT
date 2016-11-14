@@ -2966,6 +2966,15 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                 Device (GFX0)
                 {
                     Name (_ADR, 0x00020000)  // _ADR: Address
+                    Method (_DSM, 4, NotSerialized)
+                    {
+                        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+                        Return (Package()
+                        {
+                            "AAPL,ig-platform-id", Buffer() { 0x06, 0x00, 0x26, 0x0a },
+                            "hda-gfx", Buffer() { "onboard-1" },
+                        })
+                    }
                 }
 
                 Device (B0D4)
