@@ -2971,7 +2971,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                         If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
                         Return (Package()
                         {
-                            "AAPL,ig-platform-id", Buffer() { 0x06, 0x00, 0x26, 0x0a },
+                            "AAPL,ig-platform-id", Buffer() { 0x04, 0x00, 0x12, 0x04 },
                             "hda-gfx", Buffer() { "onboard-1" },
                         })
                     }
