@@ -2963,16 +2963,34 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I", 0x00000088)
                     Name (_ADR, 0x00030000)  // _ADR: Address
                 }
 
-                Device (GFX0)
+                Name (GFX0._STA, Zero)  // _STA: Status
+                Device (IGPU)
                 {
                     Name (_ADR, 0x00020000)  // _ADR: Address
-                    Method (_DSM, 4, NotSerialized)
+
+                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                     {
-                        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-                        Return (Package()
+                        If (LEqual (Arg2, Zero))
                         {
-                            "AAPL,ig-platform-id", Buffer() { 0x04, 0x00, 0x12, 0x04 },
-                            "hda-gfx", Buffer() { "onboard-1" },
+                            Return (Buffer (One)
+                            {
+                                 0x03
+                            })
+                        }
+
+                        Return (Package (0x04)
+                        {
+                            "AAPL,ig-platform-id",
+                            Buffer (0x04)
+                            {
+                                 0x04, 0x00, 0x12, 0x04
+                            },
+
+                            "hda-gfx",
+                            Buffer (0x0A)
+                            {
+                                "onboard-1"
+                            }
                         })
                     }
                 }
